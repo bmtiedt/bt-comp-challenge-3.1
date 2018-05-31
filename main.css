@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -19,3 +18,24 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
+
+.nav-full-wrap {
+  border: 0.2rem dotted red;
+}
+
+.header-full-wrap {
+  border: 0.2rem dotted orange;
+}
+
+.article-main {
+  border: 0.2rem dotted yellow;
+}
+
+.article-admin {
+  border: 0.2rem dotted green;
+}
+
+.article-categories {
+  border: 0.2rem dotted blue;
+}
+
