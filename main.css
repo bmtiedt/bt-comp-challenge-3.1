@@ -69,3 +69,19 @@ body {
   border: 0.2rem solid green;
 }
 
+/* TITLE SECTION */
+.title-info {
+  border: 0.2rem dashed red;
+}
+
+.grid-section {
+  border: 0.2rem dashed green;
+}
+
+.job-description-wrap {
+  border: 0.2rem dashed pink;
+}
+
+.section-social-media {
+  border: 0.2rem solid gray;
+}
