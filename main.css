@@ -22,6 +22,7 @@ body {
 /* NAV SECTION */
 .nav-full-wrap {
   border: 0.2rem dotted red;
+  width: 9rem;
 }
 
 .header-full-wrap {
