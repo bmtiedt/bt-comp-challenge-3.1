@@ -19,12 +19,17 @@ body {
   font-weight: 400;
 }
 
+/* NAV SECTION */
 .nav-full-wrap {
   border: 0.2rem dotted red;
 }
 
 .header-full-wrap {
   border: 0.2rem dotted orange;
+}
+
+.header-profile {
+  border: 0.2rem dotted purple;
 }
 
 .article-main {
@@ -37,5 +42,30 @@ body {
 
 .article-categories {
   border: 0.2rem dotted blue;
+}
+
+/* HEADER SECTION */
+.search-header {
+  border: 0.2rem solid orangered;
+}
+
+.search-menu {
+  border: 0.2rem solid blue;
+}
+
+.header-search {
+  border: 0.2rem solid yellowgreen;
+}
+
+.icon-profile {
+  border: 0.2rem solid turquoise;
+}
+
+.icon-planner {
+  border: 0.2rem solid violet;
+}
+
+.icon-dots {
+  border: 0.2rem solid green;
 }
 
