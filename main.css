@@ -59,13 +59,14 @@ body {
 .search-header {
   border: 0.2rem solid orangered;
   grid-area: header;
+  height: 50px;
 }
 
 .search-menu {
   border: 0.2rem solid blue;
 }
 
-.header-search {
+.header-search-input {
   border: 0.2rem solid yellowgreen;
 }
 
