@@ -19,14 +19,24 @@ body {
   font-weight: 400;
 }
 
+.complete-body-wrap {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+      "header"
+      "title"
+      "graph"
+      "info"
+      "social";
+  grid-template-rows: 1fr 2fr 3fr 5fr 3fr;
+  /* grid-template-columns: 1fr; */
+  width: 100%
+}
+
 /* NAV SECTION */
 .nav-full-wrap {
   border: 0.2rem dotted red;
-  width: 9rem;
-}
-
-.header-full-wrap {
-  border: 0.2rem dotted orange;
+  grid-area: nav;
 }
 
 .header-profile {
@@ -48,6 +58,7 @@ body {
 /* HEADER SECTION */
 .search-header {
   border: 0.2rem solid orangered;
+  grid-area: header;
 }
 
 .search-menu {
@@ -73,16 +84,76 @@ body {
 /* TITLE SECTION */
 .title-info {
   border: 0.2rem dashed red;
+  grid-area: title;
 }
 
-.grid-section {
+.graph-section {
   border: 0.2rem dashed green;
+  grid-area: graph;
+  
 }
 
 .job-description-wrap {
   border: 0.2rem dashed pink;
+  grid-area: info;
 }
 
 .section-social-media {
   border: 0.2rem solid gray;
+  grid-area: social;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
 }
