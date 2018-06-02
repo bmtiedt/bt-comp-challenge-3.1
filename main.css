@@ -57,15 +57,15 @@ body {
 
 /* HEADER SECTION */
 .search-header {
-  border: 0.2rem solid orangered;
   grid-area: header;
   height: 50px;
 }
 
 .search {
   background-color: transparent;
+  color: #a0acbf;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.8rem;
   height: 100%;
   width: 40px;
 }
@@ -81,21 +81,23 @@ body {
 }
 
 .header-search-input {
-  border: 0.2rem solid yellowgreen;
-  margin: 0;
-  width: 50%;
+  border: transparent;
+  color: #a0acbf;
+  font-weight: 400;
+  margin: 0 0 0 1rem;;
+  width: calc(100% - 49px*3 + 2px);
 }
 
 .icon-profile {
-  border: 0.2rem solid turquoise;
+  border: transparent;
 }
 
 .icon-planner {
-  border: 0.2rem solid violet;
+  border: transparent;
 }
 
 .icon-dots {
-  border: 0.2rem solid green;
+  border: transparent;
 }
 
 /* TITLE SECTION */
@@ -226,7 +228,7 @@ text-transform: uppercase;
 }
 
 .legend {
-  color: #dcecf1;
+  color: #fff;
   background-color: #6f7d95;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -239,23 +241,51 @@ text-transform: uppercase;
 
 .job-edit-button {
   background-color: #7c8aa6;
-  color: #dcecf1;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
   cursor: pointer;
   font-size: 1.7rem;
+  font-weight: 700;
+  height: 3rem;
   margin: 0 0 0 16%;
+  text-transform: uppercase;
+  width: 5rem;
+}
+
+.job-description-wrap {
+  margin: 8% 0.3rem 0 0.3rem;
 }
 
 .job-description {
   margin: 2%;
 }
 
+li {
+  border-bottom: 0.2rem solid #eef2f5;
+  padding: 6% 0;
+}
+
 li h2 {
-  margin: 1rem 0 0 0.5rem;
+  color: #6f7e95;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem 0 1rem 0.5rem;
   text-transform: uppercase;
 }
 
 li p {
-  margin: 0.2rem 0 0.5rem 0.5rem;
+  color: #4d515e;
+  font-size: 1.6rem;
+  line-height: 140%;
+  padding: 0.2rem 0 0.5rem 0.5rem;
+}
+
+.job-description-pic {
+  background-image: url(images/myLastPackage.jpg);
+  border-radius: 100%;
+  /* height: 5rem; */
+  width: 5rem;
 }
 
 /* ++++++++++SOCIAL MEDAIA+++++++++++++++ */
