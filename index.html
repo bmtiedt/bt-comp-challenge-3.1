@@ -4,120 +4,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="reset.css" type="text/css">
   <title>Comp3.1</title>
 </head>
 <body>
-  <nav class="nav-full-wrap">
-    <header class="header-profile">
-      <img src="images/profile.jpg" alt="">
-      <p class="profile-name">Newton Barley</p>
-    </header>
-    <article class="article-main">
-      <p class="p-main">Main</p>
-      <p class="">Home</p>
-      <p class="">Jobs</p>
-      <p class="">Resume</p>
-      <p class="">Tasks</p>
-      <p class="">Calendar</p>
-    </article>
-    <article class="article-admin">
-      <p class="p-admin"></p>
-      <p class="">Users</p>
-      <p class="">Locations</p>
-      <p class="">Workflows</p>
-      <p class="">Job Boards</p>
-      <p class="">Social</p>
-    </article>
-    <article class="article-categories">
-      <p class="p-categories">Categories</p>
-      <p class="">Administrative</p>
-      <p class="">Design</p>
-      <p class="">Executive</p>
-      <p class="">Human Resources</p>
-    </article>
-  </nav>
-  <header class="search-header">
-    <button class="Search-menu"></button>
-    <input type="text" class="header-search" placeholder="Search for a job, task or resume">
-    <button class="icon-profile"></button>
-    <button class="icon-planner"></button>
-    <button  class="icon-dots"></button>
-  </header>
-  <section class="title-info">
-    <h1 class="title-name">Customer Service Representative</h1>
-    <p class="title-location">San Francisco, CA <span>Preview this post</span> </p>
-    <button class="title-button open">OPEN</button>
-    <button class="title-button"></button>
-    <button class="title-button"></button>
-    <button class="title-button"></button>
-    <div class="title-options">
-      <button class="title-buttons">Summary</button>
-      <button class="title-buttons">Applicants</button>
-      <button class="title-buttons">Job Board</button>
-      <button class="title-buttons">Interview</button>
-      <button class="title-buttons">Activity</button>
-      <button class="title-buttons">Broadcast</button>
-      <button class="title-buttons">Notifications</button>
-    </div>
-  </section>
-  <section class="grid-section">
-    <article class="circle-graph"></article>
-    <article class="circle-graph"></article>
-    <article class="circle-graph"></article>
-    <article class="bar-graph"></article>
-  </section>
-  <section class="job-description-wrap">
-      <table class="job-description">
+  <div class="complete-body-wrap">
+    <!-- <nav class="nav-full-wrap">
+      <header class="header-profile">
+            <img src="images/profile.jpg" alt="">
+            <p class="profile-name">Newton Barley</p>
+      </header>
+      <article class="article-main">
+            <p class="p-main">Main</p>
+            <p class="">Home</p>
+            <p class="">Jobs</p>
+            <p class="">Resume</p>
+            <p class="">Tasks</p>
+            <p class="">Calendar</p>
+      </article>
+      <article class="article-admin">
+            <p class="p-admin"></p>
+            <p class="">Users</p>
+            <p class="">Locations</p>
+            <p class="">Workflows</p>
+            <p class="">Job Boards</p>
+            <p class="">Social</p>
+      </article>
+      <article class="article-categories">
+            <p class="p-categories">Categories</p>
+            <p class="">Administrative</p>
+            <p class="">Design</p>
+            <p class="">Executive</p>
+            <p class="">Human Resources</p>
+      </article>
+    </nav> -->
+    <main class="main-full-wrap">
+      <header class="search-header">
+            <button class="search search-menu"><i class="fas fa-align-justify"></i></button>
+            <input type="text" class="search header-search-input" placeholder="Search for a job, task or resume">
+            <button class="search icon-profile"><i class="fas fa-user"></i></button>
+            <button class="search icon-planner"><i class="far fa-calendar-alt"></i></button>
+            <button  class="search icon-dots"><i class="fab fa-buromobelexperte"></i></button>
+      </header>
+      <section class="title-info">
+        TITLE
+            <h1 class="title-name">Customer Service Representative</h1>
+            <p class="title-location">San Francisco, CA <span>Preview this post</span> </p>
+            <button class="title-button open">OPEN</button>
+            <button class="title-button"></button>
+            <button class="title-button"></button>
+            <button class="title-button"></button>
+            <div class="title-options">
+              <button class="title-buttons">Summary</button>
+              <button class="title-buttons">Applicants</button>
+              <button class="title-buttons">Job Board</button>
+              <button class="title-buttons">Interview</button>
+              <button class="title-buttons">Activity</button>
+              <button class="title-buttons">Broadcast</button>
+              <button class="title-buttons">Notifications</button>
+            </div>
+      </section>
+      <section class="graph-section">
+        GRAPH
+        <div class="flex-wrapper">
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart orange">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="30, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">30%</text>
+              </svg>
+            </div>
+            
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart green">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="60, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">60%</text>
+              </svg>
+            </div>
+          
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="90, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="percentage">90%</text>
+              </svg>
+            </div>
+          </div>
+      </section>
+      <section class="job-description-wrap">           
         <legend><button class="job-edit-button">Edit</button></legend>
-        <tr class="position">
-          <td>Position Title</td>
-          <td>Customer Service Representative</td>
-        </tr>
-        <tr class="">
-          <td>Location</td>
-          <td>San Francisco, CA</td>
-        </tr>
-        <tr>
-          <td>Employment Type</td>
-          <td>Full-time</td>
-        </tr>
-        <tr>
-          <td>Experience</td>
-          <td>Mid-level</td>
-        </tr>
-        <tr>
-          <td>Status</td>
-          <td>Open</td>
-        </tr>
-        <tr>
-          <td>Description</td>
-          <td>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness resuce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
-        </tr>
-        <tr>
-          <td>Hiring Lead</td>
-          <td>Tom Tizzy</td>
-        </tr>
-        <tr>
-          <td>Approved Salary</td>
-          <td>$58,000</td>
-        </tr>
-      </table>
-    </section>
+          <ul class="job-description">
+                <li class="position">
+                  <h2>Position Title</h2>
+                  <td>Customer Service Representative</td>
+                </li>
+                <li>
+                  <h2>Location</h2>
+                  <p>San Francisco, CA</p>
+                </li>
+                <li>
+                  <h2>Employment Type</h2>
+                  <p>Full-time</p>
+                </li>
+                <li>
+                  <h2>Experience</h2>
+                  <p>Mid-level</p>
+                </li>
+                <li>
+                  <h2>Status</h2>
+                  <p>Open</p>
+                </li>
+                <li>
+                  <h2>Description</h2>
+                  <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness resuce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
+                </li>
+                <li>
+                  <h2>Hiring Lead</h2>
+                  <p>Tom Tizzy</p>
+                </li>
+                <li>
+                  <h2>Approved Salary</h2>
+                  <p>$58,000</p>
+                </li>
+          </ul>
+      </section>
+    </main>
     <aside class="section-social-media">
-        <button class="fb">Post to Facebook</button>
-        <button class="twitter">Tweet this Job</button>
-        <button class="linked-in">Post to Linkedin</button>
+        <button class="fb"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
+        <button class="twitter"><i class="fab fa-twitter"></i>Tweet this Job</button>
+        <button class="linked-in"><i class="fab fa-linkedin"></i>Post to Linkedin</button>
         <h2>Link to this Job</h2>
         <p>Words here many many many words here. I need to type many words.</p>
         <a href=""></a>
-        <button>Copy</button>
+        <button class="social-button">Copy</button>
         <h2>Use the Button Widget</h2>
         <p>Words here many many many words here. I need to type many words.</p>
         <a href=""></a>
-        <button>Copy</button>
+        <button class="social-button">Copy</button>
         <h2>Upload Resumes by Email</h2>
         <p>Words here many many many words here. I need to type many words.</p>
         <a href=""></a>
-      </aside>
+    </aside>
+  </div>
 </body>
 </html>
+
+<!-- <article class="circle-graph"></article>
+            <article class="circle-graph"></article>
+            <article class="circle-graph"></article>
+            <article class="bar-graph"></article> -->

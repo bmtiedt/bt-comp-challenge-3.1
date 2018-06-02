@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.complete-body-wrap {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: 
+      "header"
+      "title"
+      "graph"
+      "info"
+      "social";
+  grid-template-rows: 1fr 2fr 3fr 5fr 3fr;
+  /* grid-template-columns: 1fr; */
+  width: 100%
+}
+
+/* NAV SECTION */
+.nav-full-wrap {
+  background-color: #354052;
+  border: 0.2rem dotted red;
+  grid-area: nav;
+}
+
+.header-profile {
+  border: 0.2rem dotted purple;
+}
+
+.article-main {
+  border: 0.2rem dotted yellow;
+}
+
+.article-admin {
+  border: 0.2rem dotted green;
+}
+
+.article-categories {
+  border: 0.2rem dotted blue;
+}
+
+/* HEADER SECTION */
+.search-header {
+  border: 0.2rem solid orangered;
+  grid-area: header;
+  height: 50px;
+}
+
+.search {
+  background-color: transparent;
+  height: 100%;
+}
+
+.search:hover {
+  background-color: #15a4fc;
+}
+
+.search-menu {
+  background-color: #FEFEFE;
+  border: 0.2rem solid blue;
+  color: #C6C7CB; 
+}
+
+.header-search-input {
+  border: 0.2rem solid yellowgreen;
+}
+
+.icon-profile {
+  border: 0.2rem solid turquoise;
+}
+
+.icon-planner {
+  border: 0.2rem solid violet;
+}
+
+.icon-dots {
+  border: 0.2rem solid green;
+}
+
+/* TITLE SECTION */
+.title-info {
+  border: 0.2rem dashed red;
+  grid-area: title;
+}
+
+.graph-section {
+  background-color: #EDF2F6;
+  border: 0.2rem dashed green;
+  grid-area: graph;
+  
+}
+
+.job-description-wrap {
+  background-color: #ffffff;
+  border: 0.2rem dashed pink;
+  grid-area: info;
+}
+
+legend {
+  background-color: #6f7d95;
+  color: #dcecf1;
+}
+
+.job-edit-button {
+  background-color: #7c8aa6;
+}
+
+.section-social-media {
+  background-color: #edf2f6;
+  border: 0.2rem solid gray;
+  grid-area: social;
+}
+
+.fb {
+  background-color: #4a71c2;
+}
+
+.twitter {
+  background-color: #02a7ec;
+}
+
+.linked-in {
+  background-color: #66b1d8;
+}
+
+.social-button {
+  background-color: #47b8be;
+}
+
+
+
+
+
+
+
+/* +++++++CIRCLE GRAPH+++++++++ */
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
