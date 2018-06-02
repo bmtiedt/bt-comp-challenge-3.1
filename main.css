@@ -123,10 +123,34 @@ legend {
 }
 
 .section-social-media {
+  background-color: #edf2f6;
   border: 0.2rem solid gray;
   grid-area: social;
 }
 
+.fb {
+  background-color: #4a71c2;
+}
+
+.twitter {
+  background-color: #02a7ec;
+}
+
+.linked-in {
+  background-color: #66b1d8;
+}
+
+.social-button {
+  background-color: #47b8be;
+}
+
+
+
+
+
+
+
+/* +++++++CIRCLE GRAPH+++++++++ */
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
