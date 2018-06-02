@@ -245,6 +245,18 @@ text-transform: uppercase;
   margin: 0 0 0 16%;
 }
 
+.job-description {
+  margin: 2%;
+}
+
+li h2 {
+  margin: 1rem 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+li p {
+  margin: 0.2rem 0 0.5rem 0.5rem;
+}
 
 /* ++++++++++SOCIAL MEDAIA+++++++++++++++ */
 .section-social-media {
@@ -265,6 +277,11 @@ text-transform: uppercase;
   background-color: #66b1d8;
 }
 
+.social-media-button-wrap {
+  display: flex;  
+  flex-direction: column;
+}
+
 .social-button {
   border-radius: 5px;
   color: #C6C7CB;
@@ -277,25 +294,53 @@ text-transform: uppercase;
   width: 300px;
 }
 
-.social-media-button-wrap {
-  display: flex;  
-  flex-direction: column;
+.social-icon {
+margin: 0 3rem 0 0;
 }
 
-.social-icon {
-margin: 0 3rem 0 0 ;
+.section-social-media h2 {
+  color: #4e515e;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3%;
+}
+
+.section-social-media p {
+  color: #4e515e;
+  font-size: 1.5rem;
+  line-height: 160%;
+  padding: 0 4%;
+  width: 95%;
+}
+
+.icon-link {
+  font-size: 2rem;
+  margin: 3%;
+}
+
+.social-copy-wrap {
+  height: 45px;
+  line-height: 4rem;
+  margin: 2rem;
+}
+
+.social-copy span {
+  background-color: #fff;
+  color: #6f7a8b;
+  display: inline-block;
+  height: 100%;
+  line-height: 3rem;
+  overflow: hidden;
+  width: calc(100% - 60px);
 }
 
 .social-copy {
   background-color: #47b8be;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  float: right;
+  font-size: 1.4rem;
+  height: 100%;
+  width: 6rem;
 }
-
-li h2 {
-  margin: 1rem 0 0 0.5rem;
-  text-transform: uppercase;
-}
-
-li p {
-  margin: 0.2rem 0 0.5rem 0.5rem;
-}
-
