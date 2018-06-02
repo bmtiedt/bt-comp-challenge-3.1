@@ -245,6 +245,8 @@ text-transform: uppercase;
   margin: 0 0 0 16%;
 }
 
+
+/* ++++++++++SOCIAL MEDAIA+++++++++++++++ */
 .section-social-media {
   background-color: #edf2f6;
   border: 0.2rem solid gray;
@@ -261,6 +263,27 @@ text-transform: uppercase;
 
 .linked-in {
   background-color: #66b1d8;
+}
+
+.social-button {
+  border-radius: 5px;
+  color: #C6C7CB;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 900;
+  height: 4.5rem;
+  justify-content: center;
+  margin: 2% auto;
+  width: 300px;
+}
+
+.social-media-button-wrap {
+  display: flex;  
+  flex-direction: column;
+}
+
+.social-icon {
+margin: 0 3rem 0 0 ;
 }
 
 .social-copy {
