@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css" type="text/css">
+ 
   <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <title>Comp3.1</title>
 </head>
 <body>
@@ -42,20 +44,21 @@
     </nav> -->
     <main class="main-full-wrap">
       <header class="search-header">
-            <button class="search search-menu"><i class="fas fa-align-justify"></i></button>
+            <!-- <button class="search search-menu"><i class="fas fa-align-justify"></i></button> -->
             <input type="text" class="search header-search-input" placeholder="Search for a job, task or resume">
             <button class="search icon-profile"><i class="fas fa-user"></i></button>
             <button class="search icon-planner"><i class="far fa-calendar-alt"></i></button>
             <button  class="search icon-dots"><i class="fab fa-buromobelexperte"></i></button>
       </header>
       <section class="title-info">
-        TITLE
             <h1 class="title-name">Customer Service Representative</h1>
-            <p class="title-location">San Francisco, CA <span>Preview this post</span> </p>
-            <button class="title-button open">OPEN</button>
-            <button class="title-button"></button>
-            <button class="title-button"></button>
-            <button class="title-button"></button>
+            <p class="title-location"><i class="map-point fas fa-map-marker-alt"></i>San Francisco, CA • <span>Preview this post</span> </p>
+            <div class="title-header-buttons">
+              <button class="title-button open">OPEN</button>
+              <button class="title-button"><i class="far fa-bookmark"></i></button>
+              <button class="title-button"><i class="fas fa-pencil-alt"></i></button>
+              <button class="title-button"><i class="far fa-trash-alt"></i></button>
+            </div>
             <div class="title-options">
               <button class="title-buttons">Summary</button>
               <button class="title-buttons">Applicants</button>
@@ -67,7 +70,6 @@
             </div>
       </section>
       <section class="graph-section">
-        GRAPH
         <div class="flex-wrapper">
             <div class="single-chart">
               <svg viewbox="0 0 36 36" class="circular-chart orange">
@@ -119,14 +121,16 @@
                 <text x="18" y="20.35" class="percentage">90%</text>
               </svg>
             </div>
+            <div class="bar-graph"></div>
+            <p class="bar-graph-words">Applicants/day</p>
           </div>
       </section>
       <section class="job-description-wrap">           
-        <legend><button class="job-edit-button">Edit</button></legend>
+        <legend class="legend">Job Description<button class="job-edit-button">Edit</button></legend>
           <ul class="job-description">
                 <li class="position">
                   <h2>Position Title</h2>
-                  <td>Customer Service Representative</td>
+                  <p>Customer Service Representative</p>
                 </li>
                 <li>
                   <h2>Location</h2>
@@ -160,17 +164,17 @@
       </section>
     </main>
     <aside class="section-social-media">
-        <button class="fb"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
-        <button class="twitter"><i class="fab fa-twitter"></i>Tweet this Job</button>
-        <button class="linked-in"><i class="fab fa-linkedin"></i>Post to Linkedin</button>
+        <button class="social-button fb"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
+        <button class="social-button twitter"><i class="fab fa-twitter"></i>Tweet this Job</button>
+        <button class="social-button linked-in"><i class="fab fa-linkedin"></i>Post to Linkedin</button>
         <h2>Link to this Job</h2>
         <p>Words here many many many words here. I need to type many words.</p>
         <a href=""></a>
-        <button class="social-button">Copy</button>
+        <button class="social-copy">Copy</button>
         <h2>Use the Button Widget</h2>
         <p>Words here many many many words here. I need to type many words.</p>
         <a href=""></a>
-        <button class="social-button">Copy</button>
+        <button class="social-copy">Copy</button>
         <h2>Upload Resumes by Email</h2>
         <p>Words here many many many words here. I need to type many words.</p>
         <a href=""></a>

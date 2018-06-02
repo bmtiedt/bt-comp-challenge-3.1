@@ -15,8 +15,8 @@ html {
 }
 
 body {
+  font: normal;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
 }
 
 .complete-body-wrap {
@@ -65,7 +65,9 @@ body {
 
 .search {
   background-color: transparent;
+  font-size: 1rem;
   height: 100%;
+  width: 40px;
 }
 
 .search:hover {
@@ -80,6 +82,8 @@ body {
 
 .header-search-input {
   border: 0.2rem solid yellowgreen;
+  margin: 0;
+  width: 50%;
 }
 
 .icon-profile {
@@ -97,64 +101,61 @@ body {
 /* TITLE SECTION */
 .title-info {
   border: 0.2rem dashed red;
+  font-weight: 700;
   grid-area: title;
+}
+
+.title-name {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 1rem 0 0 0.5rem;
+}
+
+.map-point {
+  font-size: 0.75rem;
+  margin: 0 0.3rem;
+}
+
+.title-location {
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.title-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-button {
+  border-radius: 50%;
+  font-size: 1.6rem;
+  /* height: 4rem; */
+  margin: 2% 5%;
+  
+}
+
+.title-buttons {
+  line-height: 160%;
+  text-align: left;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.title-buttons:hover {
+  border-bottom: 0.25rem solid #15a4fc;
 }
 
 .graph-section {
   background-color: #EDF2F6;
   border: 0.2rem dashed green;
   grid-area: graph;
-  
 }
-
-.job-description-wrap {
-  background-color: #ffffff;
-  border: 0.2rem dashed pink;
-  grid-area: info;
-}
-
-legend {
-  background-color: #6f7d95;
-  color: #dcecf1;
-}
-
-.job-edit-button {
-  background-color: #7c8aa6;
-}
-
-.section-social-media {
-  background-color: #edf2f6;
-  border: 0.2rem solid gray;
-  grid-area: social;
-}
-
-.fb {
-  background-color: #4a71c2;
-}
-
-.twitter {
-  background-color: #02a7ec;
-}
-
-.linked-in {
-  background-color: #66b1d8;
-}
-
-.social-button {
-  background-color: #47b8be;
-}
-
-
-
-
-
-
 
 /* +++++++CIRCLE GRAPH+++++++++ */
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-}
+
 
 .single-chart {
   width: 33%;
@@ -205,3 +206,73 @@ legend {
   font-size: 0.5em;
   text-anchor: middle;
 }
+
+/* +++++++++++++ */
+
+.bar-graph {
+  background-image: url('images/barGraph.jpg');
+  height: 150px;
+  /* width: 100%; */
+}
+
+.bar-graph-words {
+text-transform: uppercase;
+}
+
+/* JOB DESCRIPTION */
+.job-description-wrap {
+  background-color: #ffffff;
+  border: 0.2rem dashed pink;
+  grid-area: info;
+}
+
+.legend {
+  color: #dcecf1;
+  background-color: #6f7d95;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  padding: 0 0 0 0.9rem;
+  text-transform: uppercase;
+}
+
+.job-edit-button {
+  background-color: #7c8aa6;
+  color: #dcecf1;
+  font-size: 1.7rem;
+  margin: 0 0 0 16%;
+}
+
+.section-social-media {
+  background-color: #edf2f6;
+  border: 0.2rem solid gray;
+  grid-area: social;
+}
+
+.fb {
+  background-color: #4a71c2;
+}
+
+.twitter {
+  background-color: #02a7ec;
+}
+
+.linked-in {
+  background-color: #66b1d8;
+}
+
+.social-copy {
+  background-color: #47b8be;
+}
+
+li h2 {
+  margin: 1rem 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+li p {
+  margin: 0.2rem 0 0.5rem 0.5rem;
+}
+
