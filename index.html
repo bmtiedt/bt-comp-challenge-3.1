@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css" type="text/css">
+ 
   <link rel="stylesheet" href="reset.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <title>Comp3.1</title>
 </head>
 <body>
   <div class="complete-body-wrap">
-    <!-- <nav class="nav-full-wrap">
+    <nav class="nav-full-wrap">
       <header class="header-profile">
-            <img src="images/profile.jpg" alt="">
+            <!-- <img src="images/myLastPackage.jpg" alt=""> -->
             <p class="profile-name">Newton Barley</p>
       </header>
       <article class="article-main">
@@ -39,35 +41,35 @@
             <p class="">Executive</p>
             <p class="">Human Resources</p>
       </article>
-    </nav> -->
+    </nav>
     <main class="main-full-wrap">
       <header class="search-header">
-            <button class="search search-menu"><i class="fas fa-align-justify"></i></button>
-            <input type="text" class="search header-search-input" placeholder="Search for a job, task or resume">
-            <button class="search icon-profile"><i class="fas fa-user"></i></button>
-            <button class="search icon-planner"><i class="far fa-calendar-alt"></i></button>
-            <button  class="search icon-dots"><i class="fab fa-buromobelexperte"></i></button>
+            <!-- <button class="search search-menu"><i class="fas fa-align-justify"></i></button> -->
+            <input type="text" class="search-icon header-search-input" placeholder="Search for a job, task or resume">
+            <button class="search-icon icon-profile"><i class="fas fa-user"></i></button>
+            <button class="search-icon icon-planner"><i class="far fa-calendar-alt"></i></button>
+            <button class="search-icon icon-dots"><i class="fab fa-buromobelexperte"></i></button>
       </header>
       <section class="title-info">
-        TITLE
             <h1 class="title-name">Customer Service Representative</h1>
-            <p class="title-location">San Francisco, CA <span>Preview this post</span> </p>
-            <button class="title-button open">OPEN</button>
-            <button class="title-button"></button>
-            <button class="title-button"></button>
-            <button class="title-button"></button>
+            <p class="title-location"><i class="map-point fas fa-map-marker-alt"></i>San Francisco, CA • <span>Preview this post</span> </p>
+            <div class="title-header-buttons">
+              <button class="title-button-top open"><i class="open-icon fas fa-circle"></i>OPEN</button>
+              <button class="title-button-top"><i class="far fa-bookmark"></i></button>
+              <button class="title-button-top"><i class="fas fa-pencil-alt"></i></button>
+              <button class="title-button-top"><i class="far fa-trash-alt"></i></button>
+            </div>
             <div class="title-options">
-              <button class="title-buttons">Summary</button>
-              <button class="title-buttons">Applicants</button>
-              <button class="title-buttons">Job Board</button>
-              <button class="title-buttons">Interview</button>
-              <button class="title-buttons">Activity</button>
-              <button class="title-buttons">Broadcast</button>
-              <button class="title-buttons">Notifications</button>
+              <p class="title-buttons"><a href="#">Summary</a></p>
+              <p class="title-buttons"><a href="#">Applicants</a></p>
+              <p class="title-buttons"><a href="">Job Board</a></p>
+              <p class="title-buttons"><a href="">Interview</a></p>
+              <p class="title-buttons"><a href="">Activity</a></p>
+              <p class="title-buttons"><a href="">Broadcast</a></p>
+              <p class="title-buttons"><a href="">Notifications</a></p>
             </div>
       </section>
       <section class="graph-section">
-        GRAPH
         <div class="flex-wrapper">
             <div class="single-chart">
               <svg viewbox="0 0 36 36" class="circular-chart orange">
@@ -119,15 +121,18 @@
                 <text x="18" y="20.35" class="percentage">90%</text>
               </svg>
             </div>
+            <div class="bar-graph"></div>
+            <p class="bar-graph-words">Applicants/day</p>
           </div>
       </section>
       <section class="job-description-wrap">           
-        <legend><button class="job-edit-button">Edit</button></legend>
+        <legend class="legend">Job Description<button class="job-edit-button">Edit</button></legend>
           <ul class="job-description">
                 <li class="position">
                   <h2>Position Title</h2>
-                  <td>Customer Service Representative</td>
+                  <p>Customer Service Representative</p>
                 </li>
+
                 <li>
                   <h2>Location</h2>
                   <p>San Francisco, CA</p>
@@ -150,7 +155,7 @@
                 </li>
                 <li>
                   <h2>Hiring Lead</h2>
-                  <p>Tom Tizzy</p>
+                  <p class="job-description-pic"><span></span> Tom Tizzy</p>
                 </li>
                 <li>
                   <h2>Approved Salary</h2>
@@ -160,20 +165,26 @@
       </section>
     </main>
     <aside class="section-social-media">
-        <button class="fb"><i class="fab fa-facebook-f"></i>Post to Facebook</button>
-        <button class="twitter"><i class="fab fa-twitter"></i>Tweet this Job</button>
-        <button class="linked-in"><i class="fab fa-linkedin"></i>Post to Linkedin</button>
-        <h2>Link to this Job</h2>
-        <p>Words here many many many words here. I need to type many words.</p>
-        <a href=""></a>
-        <button class="social-button">Copy</button>
-        <h2>Use the Button Widget</h2>
-        <p>Words here many many many words here. I need to type many words.</p>
-        <a href=""></a>
-        <button class="social-button">Copy</button>
-        <h2>Upload Resumes by Email</h2>
-        <p>Words here many many many words here. I need to type many words.</p>
-        <a href=""></a>
+      <div class="social-media-button-wrap">
+        <button class="social-button fb"><i class="social-icon fab fa-facebook-f"></i>Post to Facebook</button>
+        <button class="social-button twitter"><i class="social-icon fab fa-twitter"></i>Tweet this Job</button>
+        <button class="social-button linked-in"><i class="social-icon fab fa-linkedin"></i>Post to Linkedin</button>
+      </div>
+        <h2><i class="icon-link fas fa-globe"></i>  Link to this Job</h2>
+        <p>Don’t worry, we’ll give you a bit of creative license, however the objective is to build something that.</p>
+      <div class="social-copy-wrap">
+        <span><a href="">http://mywebwork.com</a></span>
+        <button class="social-copy">Copy</button>
+      </div>
+      <h2><i class="icon-link fas fa-calculator"></i>  Use the Button Widget</h2>
+      <p>Don’t worry, we’ll give you a bit of creative license, however the objective is to build something that respects the integrity of the original design.</p>
+      <div class="social-copy-wrap">
+        <span>link.dot//:https.www.where</span>
+        <button class="social-copy">Copy</button>
+      </div>
+      <h2><i class="icon-link far fa-paper-plane"></i>  Upload Resumes by Email</h2>
+      <p>However the objective is to build something that respects the integrity of the original design.</p>
+      <a href=""></a>
     </aside>
   </div>
 </body>
