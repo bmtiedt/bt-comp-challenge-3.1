@@ -28,6 +28,7 @@ body {
   background-color: #354052;
   border: 0.2rem dotted red;
   /* grid-area: nav; */
+  height: 100%;
 }
 
 .header-profile {
@@ -212,29 +213,55 @@ body {
   }
 }
 
-.circular-chart.orange .circle {
-  stroke: #ff9f00;
+.circular-chart.blue .circle {
+  stroke: #2600ff;
 }
 
 .circular-chart.green .circle {
-  stroke: #4CC790;
+  stroke: rgb(19, 160, 97);
 }
 
-.circular-chart.blue .circle {
-  stroke: #3c9ee5;
+.circular-chart.purple .circle {
+  stroke: #af3ce5;
 }
 
-.percentage {
+.cirle-graph {
   fill: #666;
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
 }
 
+.graph-number {
+  font-size: 1rem;
+}
+
+.circle-graph-words, {
+  background-color: #fff;
+  border: 2px solid #d2dae2;
+  border-radius: 20px;
+  color: #4e515e;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin: 1rem 0 3rem -50%;
+  width: 24rem;
+}
+
+.bar-graph-words {
+  background-color: #fff;
+  border: 2px solid #d2dae2;
+  border-radius: 20px;
+  color: #4e515e;
+}
+
+
 /* +++++++++++++ */
 
 .bar-graph {
   background-image: url('images/barGraph.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   height: 150px;
 }
 
