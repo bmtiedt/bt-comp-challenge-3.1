@@ -102,7 +102,6 @@ body {
 
 /* TITLE SECTION */
 .title-info {
-  border: 0.2rem dashed red;
   font-weight: 700;
   grid-area: title;
 }
@@ -111,42 +110,82 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 140%;
   margin: 1rem 0 0 0.5rem;
 }
 
 .map-point {
-  font-size: 0.75rem;
-  margin: 0 0.3rem;
+  color: #a895a5;
+  font-size: 1.6rem;
+  margin: 0 0.8rem;
 }
 
 .title-location {
+    color: #a895a5;
     font-size: 1.7rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 160%;
+    padding: 1rem 0;
+    margin: 0 0.5rem;
+}
+
+.title-location span {
+  color: #3c9ee5;
+  font-weight: 400;
+}
+
+.title-header-buttons {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  margin: 3% 0 6% 2%;
+
+}
+
+.title-button-top {
+  border: 0.15rem solid #dee4ee;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2% 3%;
+  padding: 3%;
+}
+
+.open {
+  border-radius: 20px;
+}
+
+.open-icon {
+  color: #8cc63e;
+  font-size: 1rem;
+  margin: 0.4rem 0.3rem 0 0.1rem;
 }
 
 .title-options {
   display: flex;
   flex-direction: column;
-}
-
-.title-button {
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.6rem;
-  margin: 2% 5%;
+  margin: 2rem 0;
 }
 
 .title-buttons {
   cursor: pointer;
   line-height: 160%;
+  margin: 0 0 0.2rem 1rem;
   text-align: left;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 
-.title-buttons:hover {
+.title-buttons a {
+  color: #8a95a5;
+  line-height: 210%;
+  /* margin: 0 0 1rem 1rem; */
+  text-decoration: none;
+}
+
+.title-buttons a:hover {
   border-bottom: 0.25rem solid #15a4fc;
 }
 
