@@ -310,6 +310,7 @@ body {
 li {
   border-bottom: 0.2rem solid #d1d8db;
   padding: 1% 0;
+  list-style-type: none;
 }
 
 li h2 {
@@ -342,15 +343,15 @@ li p {
 }
 
 .fb {
-  background-color: #4a71c2;
+  background-color: #496ec1;
 }
 
 .twitter {
-  background-color: #02a7ec;
+  background-color: #00aaef;
 }
 
 .linked-in {
-  background-color: #66b1d8;
+  background-color: #0382be;
 }
 
 .social-media-button-wrap {
@@ -360,7 +361,7 @@ li p {
 
 .social-button {
   border-radius: 5px;
-  color: #C6C7CB;
+  color: rgb(245, 247, 248);
   cursor: pointer;
   display: flex;
   font-size: 2rem;
