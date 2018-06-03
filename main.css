@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  /* font: normal; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -107,6 +106,7 @@ body {
     line-height: 160%;
     /* padding: 1rem 0; */
     margin: 0.5rem;
+    /* width: calc(100% - 50px); */
 }
 
 .title-location span {
@@ -173,11 +173,6 @@ body {
   background-color: #EDF2F6;
 }
 
-/* ++++++++GRAPH AREA ++++++++++ */
-.graph-section {
-  margin: 0 auto;
-  /* width: 100%; */
-}
 /* +++++++CIRCLE GRAPH+++++++++ */
 
 
@@ -243,7 +238,7 @@ body {
   color: #4e515e;
   display: inline-block;
   font-size: 1.5rem;
-  line-height: 150%;
+  line-height: 2.5rem;
   margin: 1rem 0 3rem -50%;
   width: 24rem;
 }
@@ -258,8 +253,9 @@ body {
   border-radius: 20px;
   color: #4e515e;
   font-size: 1.5rem;
-  line-height: 150%;
-  margin: 1rem 0 3rem 18%;
+  font-weight: 600;
+  line-height: 2.5rem;
+  margin: 1rem 0 0 18%;
   text-transform: uppercase;
   width: 24rem;
 }
@@ -276,7 +272,7 @@ body {
 
 /* JOB DESCRIPTION */
 .job-description-wrap {
-  background-color: #ffffff;
+  background-color: #ecf2f6;
   grid-area: info;
 }
 
@@ -306,24 +302,21 @@ body {
   width: 5rem;
 }
 
-.job-description-wrap {
-  margin: 8% 0.3rem 0 0.3rem;
-}
-
 .job-description {
+  background-color: #fcfcfc;
   margin: 2%;
 }
 
 li {
-  border-bottom: 0.2rem solid #eef2f5;
-  padding: 6% 0;
+  border-bottom: 0.2rem solid #d1d8db;
+  padding: 1% 0;
 }
 
 li h2 {
   color: #6f7e95;
   font-size: 1.8rem;
   font-weight: 700;
-  padding: 1rem 0 1rem 0.5rem;
+  padding: 1rem 0 0 0.5rem;
   text-transform: uppercase;
 }
 
@@ -331,7 +324,8 @@ li p {
   color: #4d515e;
   font-size: 1.6rem;
   line-height: 140%;
-  padding: 0.2rem 0 0.5rem 0.5rem;
+  padding: 0.2rem 0 2rem 0.5rem;
+  width: calc(100% - 100px);
 }
 
 .job-description-pic {
@@ -373,7 +367,7 @@ li p {
   font-weight: 900;
   height: 4.5rem;
   justify-content: center;
-  margin: 2% auto;
+  margin: 1% auto;
   width: 300px;
 }
 
@@ -392,13 +386,13 @@ margin: 0 3rem 0 0;
   color: #4e515e;
   font-size: 1.5rem;
   line-height: 160%;
-  padding: 0 4%;
-  width: 95%;
+  padding-left: 0.8rem;
+  width: calc(100% - 75px);
 }
 
 .icon-link {
   font-size: 2rem;
-  margin: 3%;
+  margin: 1%;
 }
 
 .social-copy-wrap {
