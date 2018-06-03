@@ -28,6 +28,16 @@ body {
   border: 0.2rem dotted red;
   /* grid-area: nav; */
   height: 100%;
+  width: 5rem;
+}
+
+.img-div {
+  background-image: url('images/myLastPackage1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  height: 4rem;
+  /* width: 4rem; */
 }
 
 .header-profile {
