@@ -26,10 +26,10 @@ body {
 .nav-full-wrap {
   background-color: #354052;
   border: 0.2rem dotted red;
-  display: flex;
-  flex-direction: column;
+  display: none;
   /* grid-area: nav; */
   height: 100%;
+  margin: 0 auto;
   width: 5rem;
 }
 
@@ -54,6 +54,8 @@ body {
 
 .article-main {
   border: 0.2rem dotted yellow;
+  display: grid;
+
 }
 
 .article-admin {
