@@ -236,7 +236,7 @@ body {
   font-size: 1rem;
 }
 
-.circle-graph-words, {
+.circle-graph-words {
   background-color: #fff;
   border: 2px solid #d2dae2;
   border-radius: 20px;
@@ -248,15 +248,21 @@ body {
   width: 24rem;
 }
 
+.circle-graph-icon {
+  font-size: 0.1rem;
+}
+
 .bar-graph-words {
   background-color: #fff;
   border: 2px solid #d2dae2;
   border-radius: 20px;
   color: #4e515e;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin: 1rem 0 3rem 18%;
+  text-transform: uppercase;
+  width: 24rem;
 }
-
-
-/* +++++++++++++ */
 
 .bar-graph {
   background-image: url('images/barGraph.jpg');
@@ -265,9 +271,8 @@ body {
   height: 150px;
 }
 
-.bar-graph-words {
-text-transform: uppercase;
-}
+
+/* +++++++++++++ */
 
 /* JOB DESCRIPTION */
 .job-description-wrap {
