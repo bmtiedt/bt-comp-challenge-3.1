@@ -219,10 +219,17 @@ body {
 /* +++++++CIRCLE GRAPH+++++++++ */
 
 
+.flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
 .single-chart {
-  width: 33%;
-  justify-content: space-around ;
-  margin: 0 0 0 11rem;
+  /* width: 66%; */
+  /* justify-content: space-around ; */
+  margin: 0 22%;
 }
 
 .circular-chart {
@@ -275,19 +282,22 @@ body {
 }
 
 .circle-graph-words {
+  align-items: center;
   background-color: #fff;
   border: 2px solid #d2dae2;
   border-radius: 20px;
   color: #444652;
-  display: inline-block;
+  display: flex;
   font-size: 1.5rem;
+  justify-content: center;
   line-height: 2.5rem;
-  margin: 1rem 0 3rem -50%;
+  margin: 1rem 0 3rem 0;
   width: 24rem;
 }
 
 .circle-graph-icon {
-  font-size: 0.1rem;
+  font-size: 3.5px;
+  margin: 0 0.5rem;
 }
 
 .bar-graph-words {
@@ -295,10 +305,13 @@ body {
   border: 2px solid #d2dae2;
   border-radius: 20px;
   color: #4e515e;
+  display: flex;
   font-size: 1.5rem;
   font-weight: 600;
+  justify-content: center;
   line-height: 2.5rem;
   margin: 1rem 0 4rem 18%;
+  /* padding-left: 2%; */
   text-transform: uppercase;
   width: 24rem;
 }
