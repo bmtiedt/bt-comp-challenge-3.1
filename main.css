@@ -12,6 +12,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  min-width: 320px;
+  width: 100%;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
 }
 
 .complete-body-wrap {
-  display: grid;
+  /* display: grid; */
 }
 
 /* NAV SECTION */
@@ -373,9 +375,11 @@ li p {
 }
 
 .job-description-pic {
-  /* background-image: url(images/myLastPackage.jpg); */
+  background-image: url(images/myLastPackage1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 100%;
-  /* height: 5rem; */
+  height: 5rem;
   width: 5rem;
 }
 
@@ -456,8 +460,10 @@ margin: 0 3rem 0 0;
   color: #6f7a8b;
   display: inline-block;
   font-size: 1.5rem;
+  font-weight: 700;
   /* height: 100%; */
   /* line-height: 3rem; */
+  padding-left: 2rem;
   overflow: hidden;
   width: calc(100% - 60px);
 }
@@ -473,3 +479,9 @@ margin: 0 3rem 0 0;
   height: 100%;
   width: 6rem;
 }
+
+#social-copy-span {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: calc(100% - 10px);;
+} 
