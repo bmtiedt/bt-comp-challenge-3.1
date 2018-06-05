@@ -233,61 +233,82 @@ body {
 
 
 .flex-wrap {
+  border-top: 0.5rem soilid #eff3f6;
+  height: 315px;
+  width: 85vw;
+  margin: -2px 0 -2px 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 15px;
+  /*align-items: center;
+  justify-items: center; */
+}
+
+
+
+.circle-graph-wrap {
   align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center;
+  /* display: grid;
+  justify-content: center;
+  margin: 0; */
 }
 
-.single-chart {
-  /* width: 66%; */
-  /* justify-content: space-around ; */
-  margin: 0 22%;
+.circle-graphs-div {
+  border: 10px solid #fff;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border-width: 10px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.circular-chart {
-  /* display: block; */
-  margin: 10px auto;
-  max-width: 78%;
-  max-height: 16rem;
+.circle-graph-1 {
+  border-color: #fcfcfc red red red;
 }
 
-.circle-bg {
-  fill: none;
-  stroke: rgb(189, 163, 163);
-  stroke-width: 3.8;
+.circle-graph-1 {
+  border-color: green green green #fcfcfc;
 }
 
-.circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
+.circle-graph-1 {
+  border-color: blue blue #fcfcfc blue;
 }
 
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
+.circle-graph-num,
+.circle-graph-word {
+  color: grey;
+  font-size: 175%;
 }
 
-.circular-chart.blue .circle {
-  stroke: #2600ff;
+.circle-graph-word {
+  font-size: 75%;
 }
 
-.circular-chart.green .circle {
-  stroke: rgb(19, 160, 97);
+.circle-graph-btn {
+  height: 28px;
+  width: 153px;
 }
 
-.circular-chart.purple .circle {
-  stroke: #af3ce5;
+.circle-graph-btn,
+.bar-graph-btn {
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 15px;
+  color: grey;
+  font-size: .65rem;
 }
 
-.cirle-graph {
-  fill: rgb(71, 63, 63);
-  font-family: sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
+.circle-graph-btn:hover,
+.bar-graph-btn:hover {
+  background-color: #d4d8d8;
 }
 
 .graph-number {
@@ -304,7 +325,8 @@ body {
   font-size: 1.5rem;
   justify-content: center;
   line-height: 2.5rem;
-  margin: 1rem 0 3rem 12%;
+  margin: 1rem 0 3rem 4rem;
+  /* margin: 0 auto; */
   width: 24rem;
 }
 
@@ -517,4 +539,56 @@ margin: 0 3rem 0 0;
   .nav-full-wrap {
     display: grid;
   }
+} */
+
+
+
+/* ============= */
+/* 
+.single-chart {
+  margin: 0 22%;
+}
+
+.circular-chart {
+  margin: 10px auto;
+  max-width: 78%;
+  max-height: 16rem;
+} */
+
+/* .circle-bg {
+  fill: none;
+  stroke: rgb(189, 163, 163);
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.blue .circle {
+  stroke: #2600ff;
+}
+
+.circular-chart.green .circle {
+  stroke: rgb(19, 160, 97);
+}
+
+.circular-chart.purple .circle {
+  stroke: #af3ce5;
+} */
+
+/* .cirle-graph {
+  fill: rgb(71, 63, 63);
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
 } */
