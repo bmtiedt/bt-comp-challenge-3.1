@@ -37,7 +37,7 @@ body {
   background-color: #354052;
   border: 0.2rem dotted red;
   display: none;
-  /* grid-area: nav; */
+  grid-area: nav;
   height: 100%;
   margin: 0 auto;
   width: 5rem;
@@ -236,7 +236,7 @@ body {
 
 .flex-wrap {
   border-top: 0.5rem soilid #eff3f6;
-  height: 315px;
+  /* height: 315px; */
   width: 85vw;
   margin: -2px 0 -2px 0;
   display: flex;
@@ -265,7 +265,7 @@ body {
   width: 130px;
   border-radius: 50%;
   border-width: 10px;
-  margin-right: 25px;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,15 +273,15 @@ body {
 }
 
 .circle-graph-1 {
-  border-color: #fcfcfc red red red;
+  border-color: #cccccc red red red;
 }
 
-.circle-graph-1 {
-  border-color: green green green #fcfcfc;
+.circle-graph-2 {
+  border-color: green green green #cccccc;
 }
 
-.circle-graph-1 {
-  border-color: blue blue #fcfcfc blue;
+.circle-graph-3 {
+  border-color: blue blue #cccccc blue;
 }
 
 .circle-graph-num,
