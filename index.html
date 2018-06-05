@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
- 
   <link rel="stylesheet" href="reset.css" type="text/css">
   <link rel="stylesheet" href="main.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -87,64 +86,31 @@
             </div>
       </section>
       <section class="graph-section">
-        <div class="flex-wrapper">
-            <div class="single-chart">
-              <svg viewbox="0 0 36 36" class="circular-chart blue">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                  stroke-dasharray="90, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <text x="18" y="16.35" class="cirle-graph graph-number">3154</text>
-                <text x="18" y="22.35" class="cirle-graph graph-title">Resumes</text>
-              </svg>
-            </div>
-            
-            <div class="single-chart">
-              <svg viewbox="0 0 36 36" class="circular-chart green">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                  stroke-dasharray="22, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <text x="18" y="16.35" class="cirle-graph graph-number">1728</text>
-                <text x="18" y="22.35" class="cirle-graph graph-title">Interviews</text>
-              </svg>
-            </div>
-          
-            <div class="single-chart">
-              <svg viewbox="0 0 36 36" class="circular-chart purple">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                  stroke-dasharray="70, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <text x="18" y="16.35" class="cirle-graph graph-number">904</text>
-                <text x="18" y="22.35" class="cirle-graph graph-title">Forwards</text>
-              </svg>
-              <p class="circle-graph-words">TOTALS <i class="circle-graph-icon fas fa-circle"></i> Out of 5,334 views</p>
-            </div>
-            <div class="bar-graph"></div>
-            <p class="bar-graph-words">Applicants/day</p>
+        <div class="flex-wrap">
+          <div class="circle-graph-wrap">
+            <div class="circle-graph-wrap-words">
+            <article class="circle-graph">
+              <div class="circle-graphs-div circle-graph-1">
+                <p class="circle-graph-num">679</p>
+                <p class="circle-graph-word">Applicants</p>
+              </div>
+              <div class="circle-graphs-div circle-graph-2">
+                <p class="circle-graph-num">234</p>
+                <p class="circle-graph-word">Interviews</p>
+              </div>
+              <div class="circle-graphs-div circle-graph-3">
+                <p class="circle-graph-num">3780</p>
+                <p class="circle-graph-word">Forwards</p>
+              </div>
+            </article>          
+            <p class="circle-graph-words">TOTALS <i class="circle-graph-icon fas fa-circle"></i> Out of 5,334 views</p>
           </div>
+            <div class="bar-graph-wrap">
+              <div class="bar-graph-pic"></div>
+              <p class="bar-graph-words">Applicants/day</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="job-description-wrap">           
         <legend class="legend">Job Description<button class="job-edit-button">Edit</button></legend>
@@ -217,3 +183,57 @@
             <article class="circle-graph"></article>
             <article class="circle-graph"></article>
             <article class="bar-graph"></article> -->
+
+                        <!-- <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="90, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="16.35" class="cirle-graph graph-number">3154</text>
+                <text x="18" y="22.35" class="cirle-graph graph-title">Resumes</text>
+              </svg>
+            </div>
+            
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart green">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="22, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="16.35" class="cirle-graph graph-number">1728</text>
+                <text x="18" y="22.35" class="cirle-graph graph-title">Interviews</text>
+              </svg>
+            </div>
+          
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart purple">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="70, 100"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="16.35" class="cirle-graph graph-number">904</text>
+                <text x="18" y="22.35" class="cirle-graph graph-title">Forwards</text>
+              </svg>
+            </div> -->
