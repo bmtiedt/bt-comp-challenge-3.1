@@ -37,7 +37,7 @@ body {
   background-color: #354052;
   border: 0.2rem dotted red;
   display: none;
-  grid-area: nav;
+  /* grid-area: nav; */
   height: 100%;
   margin: 0 auto;
   width: 5rem;
@@ -101,7 +101,7 @@ body {
 
 /* HEADER SECTION */
 .search-header {
-  grid-area: header;
+  /* grid-area: header; */
   height: 50px;
 }
 
@@ -140,7 +140,7 @@ body {
 .title-info {
   background-color: #fcfcfc;
   font-weight: 700;
-  grid-area: title;
+  /* grid-area: title; */
 }
 
 .title-name {
@@ -228,7 +228,7 @@ body {
 
 .graph-section {
   background-color: #EDF2F6;
-  grid-area: graph;
+  /* grid-area: graph; */
 }
 
 /* +++++++CIRCLE GRAPH+++++++++ */
@@ -252,9 +252,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* display: grid;
-  justify-content: center;
-  margin: 0; */
+  width: 40rem;
+
 }
 
 .circle-graphs-div {
@@ -366,7 +365,7 @@ body {
 /* JOB DESCRIPTION */
 .job-description-wrap {
   background-color: #ecf2f6;
-  grid-area: info;
+  /* grid-area: info; */
 }
 
 .legend {
@@ -446,7 +445,7 @@ span {
 /* ++++++++++SOCIAL MEDAIA+++++++++++++++ */
 .section-social-media {
   background-color: #edf2f6;
-  grid-area: social;
+  /* grid-area: social; */
 }
 
 .fb {
@@ -555,6 +554,38 @@ margin: 0 3rem 0 0;
 
 
 @media screen and (min-width:1400px) {
+  .nav-full-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+  }
+
+  #nav { grid-area: nav; }
+  #header { grid-area: header; }
+  #title { grid-area: title; }
+  #graph { grid-area: graph; }
+  #info { grid-area: info; }
+  #social { grid-area: social; }
+
+  .complete-body-wrap {
+    display: grid;
+  grid-template-areas: 
+        "nav header header header header"
+        "nav title title title title"
+        "nav title title title title"
+        "nav title title title title"
+        "nav graph graph graph graph"
+        "nav graph graph graph graph"
+        "nav graph graph graph graph"
+        "nav graph graph graph graph"
+        "nav info info social social"
+        "nav info info social social"
+        "nav info info social social"
+        "nav info info social social"
+        "nav info info social social"
+  } 
+
+
   
   /* +++++GRAPH @ MEDIA+++++++ */
   .flex-wrap {
@@ -590,7 +621,7 @@ margin: 0 3rem 0 0;
     align-content: center;
     display: flex;
     flex-direction: column;
-
+    width: 40rem;
   }
 }
 
