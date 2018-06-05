@@ -132,8 +132,8 @@ body {
   width: calc(100% - 50px*3 + 2px);
 }
 
-.header-search-input:focus {
-  border-bottom: 1px solid red;
+.search-icon:focus {
+  border-bottom: 1.5px solid #15a4fc;
 }
 
 /* TITLE SECTION */
@@ -236,8 +236,6 @@ body {
 
 .flex-wrap {
   border-top: 0.5rem soilid #eff3f6;
-  /* height: 315px; */
-  width: 85vw;
   margin: -2px 0 -2px 0;
   display: flex;
   flex-wrap: wrap;
@@ -327,7 +325,7 @@ body {
   font-size: 1.5rem;
   justify-content: center;
   line-height: 2.5rem;
-  margin: 1rem 0 3rem 4rem;
+  margin: 1rem 0 3rem 0;
   /* margin: 0 auto; */
   width: 24rem;
 }
@@ -347,7 +345,7 @@ body {
   font-weight: 600;
   justify-content: center;
   line-height: 2.5rem;
-  margin: 1rem 0 4rem 12%;
+  margin: 1rem 0 4rem 0;
   /* padding-left: 2%; */
   text-transform: uppercase;
   width: 24rem;
