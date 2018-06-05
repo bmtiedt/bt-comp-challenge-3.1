@@ -556,6 +556,11 @@ margin: 0 3rem 0 0;
     flex-direction: row;
   }
 
+  .circle-graph-wrap-words {
+    display: grid;
+    margin: 0;
+  }
+
   .circle-graph {
     display: flex;
   }
