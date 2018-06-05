@@ -357,7 +357,7 @@ body {
   background-position: center;
   height: 150px;
   margin: 0 auto;
-  width: calc(100% - 50px);
+  width: calc(100% - 10px);
 }
 
 
