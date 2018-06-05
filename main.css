@@ -583,18 +583,31 @@ margin: 0 3rem 0 0;
   } 
 /* ++++++++++++ NAV +++++++++++++ */
   .nav-full-wrap {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
-    width: 18rem;
+    width: 24.5rem;
   }
 
+  .header-profile,
   .article-main,
-  .article.admin,
+  .article-admin,
   .article-categories {
     display: grid;
 
+    width: 100%
   }
+
+  .article-p {
+    font-size: 1.6rem;
+    line-height: 180%;
+    margin: 0 0 0 1rem;
+  }
+
+  .article-p span {
+    margin: 0 0 0 3rem;
+  }
+
 
 
   
