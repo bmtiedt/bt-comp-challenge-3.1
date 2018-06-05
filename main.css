@@ -19,6 +19,8 @@ html {
   font-size: 62.5%;
   min-width: 320px;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 body {
@@ -542,6 +544,22 @@ margin: 0 3rem 0 0;
 } */
 
 
+@media screen and (min-width:1400px) {
+  
+  /* +++++GRAPH @ MEDIA+++++++ */
+  .flex-wrap {
+    display: flex;
+  }
+  
+  .circle-graph-wrap {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .circle-graph {
+    display: flex;
+  }
+}
 
 /* ============= */
 /* 
