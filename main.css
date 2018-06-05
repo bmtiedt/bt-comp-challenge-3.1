@@ -554,6 +554,8 @@ margin: 0 3rem 0 0;
   .circle-graph-wrap {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
   }
 
   .circle-graph-wrap-words {
@@ -561,8 +563,24 @@ margin: 0 3rem 0 0;
     margin: 0;
   }
 
+  .circle-graph-words {
+    margin: 2rem 0 0 20%;
+  }
+
   .circle-graph {
     display: flex;
+  }
+
+  .bar-graph-pic {
+    height: 200px;
+    width: 600px;
+  }
+
+  .bar-graph-wrap {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+
   }
 }
 
