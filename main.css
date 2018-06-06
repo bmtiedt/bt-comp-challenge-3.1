@@ -167,7 +167,8 @@ a {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 140%;
-  margin: 1rem 0 0.5rem 0.5rem;
+  padding: 1rem 0 0.5rem 0.5rem;
+  width: 380px;
 }
 
 .map-point {
@@ -414,6 +415,10 @@ a {
   width: 5rem;
 }
 
+.edit-icon {
+  display: none;
+}
+
 .job-description {
   background-color: #fcfcfc;
   margin: 2%;
@@ -513,8 +518,8 @@ margin: 0 3rem 0 0;
   color: #4e515e;
   font-size: 1.5rem;
   line-height: 160%;
-  padding-left: 0.8rem;
-  width: calc(100% - 75px);
+  padding-left: 1rem;
+  width: calc(100% - 10rem);
 }
 
 .icon-link {
@@ -542,9 +547,9 @@ margin: 0 3rem 0 0;
   font-weight: 700;
   /* height: 100%; */
   /* line-height: 3rem; */
-  padding-left: 2rem;
+  padding: 0 2rem;
   overflow: hidden;
-  width: calc(100% - 80px);
+  width: calc(100% - 10rem);
 }
 
 .social-copy {
@@ -556,6 +561,7 @@ margin: 0 3rem 0 0;
   float: right;
   font-size: 1.4rem;
   height: 100%;
+  margin-right: 2rem;
   width: 6rem;
 }
 
@@ -572,16 +578,62 @@ margin: 0 3rem 0 0;
   }
 } */
 
+@media screen and (min-width:450px) {
+  .nav-full-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 7.5rem;
+  }
 
-@media screen and (min-width:1400px) {
+  .article-p span {
+    display: none;
+  }
 
-/* FULL GRID AREA DEFINED */
   #nav { grid-area: nav; }
   #header { grid-area: header; }
   #title { grid-area: title; }
   #graph { grid-area: graph; }
   #info { grid-area: info; }
   #social { grid-area: social; }
+
+  .complete-body-wrap {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-areas: 
+        "nav header header "
+        "nav title title"
+        "nav title title"
+        "nav title title"
+        "nav graph graph"
+        "nav graph graph"
+        "nav graph graph"
+        "nav graph graph"
+        "nav info social"
+        "nav info social"
+        "nav info social"
+        "nav info social"
+        "nav info social"
+  } 
+
+  .header-profile {
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+    margin: 0;
+  }
+
+  .img-profile-div {
+    height: 5rem;
+    width: 5rem;
+  }
+
+
+}
+@media screen and (min-width:1400px) {
+
+/* FULL GRID AREA DEFINED */
+
 
   .complete-body-wrap {
     display: grid;
@@ -820,6 +872,7 @@ margin: 0 3rem 0 0;
   }
 
   .edit-icon {
+    display: inherit;
     font-size: 1rem;
     margin-right: 1rem;
   }
