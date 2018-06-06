@@ -793,17 +793,26 @@ margin: 0 3rem 0 0;
     margin: 2rem 0 0 14rem;
   }
 
-  /* +++++++SOCIAL SECTION++++++++ */
-.job-social-wrap {
-  display: flex
-}
+  /* +++++++JOB SECTION++++++++ */
+  .job-social-wrap {
+    display: flex
+  }
 
   .job-description-wrap {
     width: 60%;
   }
 
+  .legend {
+    display: grid;
+  }
+
+  .job-edit-button {
+    margin: 0 0 0 3rem;
+  }
+
+  /* +++++++SOCIAL SECTION++++++++ */
   .section-social-media {
-    width: 39%;
+    width: 40%;
   }
 
 }
