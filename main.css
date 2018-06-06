@@ -39,7 +39,6 @@ a {
 /* NAV SECTION */
 .nav-full-wrap {
   background-color: #354052;
-  border: 0.2rem dotted red;
   display: none;
   /* grid-area: nav; */
   height: 100%;
@@ -61,8 +60,14 @@ a {
   font-weight: 400;
 }
 
+.header-profile,
+.article-main,
+.article-admin,
+.article-categories {
+  border-bottom: 0.2rem solid rgb(20, 20, 20);
+}
+
 .header-profile {
-  border: 0.2rem dotted purple;
   display: flex;
   height: 18rem;
   justify-content: center
@@ -74,17 +79,11 @@ a {
 }
 
 .article-main {
-  border: 0.2rem dotted yellow;
   display: grid;
-
-}
-
-.article-admin {
-  border: 0.2rem dotted green;
 }
 
 .article-categories {
-  border: 0.2rem dotted blue;
+  border-bottom: 0.2rem solid rgb(20, 20, 20);
 }
 
 .check-checked {
@@ -798,8 +797,16 @@ margin: 0 3rem 0 0;
     display: flex
   }
 
+  .job-description {
+    margin: 0.5rem 2%;
+  }  
+
   .job-description-wrap {
     width: 60%;
+  }
+
+  .job-description-pic {
+    margin: 0.5rem 2%;
   }
 
   .legend {
