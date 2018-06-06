@@ -84,10 +84,6 @@ a {
   display: grid;
 }
 
-.article-categories {
-  border-bottom: 0.2rem solid rgb(20, 20, 20);
-}
-
 .check-checked {
   color: yellow;
 }
@@ -469,7 +465,7 @@ span {
   margin: 0 0 0 2rem;
 }
 
-/* ++++++++++SOCIAL MEDAIA+++++++++++++++ */
+/* ++++++++++SOCIAL MEDIA+++++++++++++++ */
 .section-social-media {
   background-color: #edf2f6;
   /* grid-area: social; */
@@ -632,9 +628,18 @@ margin: 0 3rem 0 0;
     width: 5rem;
   }
 
+  .header-profile {
+    border-bottom: 0.2rem solid transparent;
+  }
+
+  .article-p-main {
+    color: transparent;
+  }
+
   .article-main,
   .article-admin,
   .article-categories {
+    border-bottom: 0.2rem solid transparent;
     height: 20rem;
   }
 
