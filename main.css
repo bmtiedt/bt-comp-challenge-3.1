@@ -335,7 +335,7 @@ a {
   font-size: 1rem;
 }
 
-.circle-graph-words {
+.circle-graph-footer {
   align-items: center;
   background-color: #fff;
   border: 2px solid #d2dae2;
@@ -355,7 +355,7 @@ a {
   margin: 0 0.5rem;
 }
 
-.bar-graph-words {
+.bar-graph-footer {
   background-color: #fff;
   border: 2px solid #d2dae2;
   border-radius: 20px;
@@ -602,7 +602,7 @@ margin: 0 3rem 0 0;
         "nav info info social social"
         "nav info info social social"
   } 
-/* ++++++++++++ NAV +++++++++++++ */
+  /* ++++++++++++ NAV +++++++++++++ */
   .nav-full-wrap {
     /* align-items: center; */
     display: flex;
@@ -656,7 +656,7 @@ margin: 0 3rem 0 0;
     color: #fff;
   }
 
-/* +++++header-search++++++ */
+  /* +++++header-search++++++ */
   #search-menu {
     display: initial ;
   }
@@ -736,6 +736,7 @@ margin: 0 3rem 0 0;
   /* +++++GRAPH @ MEDIA+++++++ */
   .flex-wrap {
     display: flex;
+    padding-top: 5rem;
   }
   
   .circle-graph-wrap {
@@ -745,29 +746,50 @@ margin: 0 3rem 0 0;
     width: 1200px;
   }
 
-  .circle-graph-wrap-words {
-    display: grid;
-    margin: 0;
-  }
-
-  .circle-graph-words {
-    margin: 2rem 0 0 20%;
+  .circle-graph-footer {
+    margin: 2rem 0 2rem 30%;
   }
 
   .circle-graph {
     display: flex;
+    height:200px;
+    justify-content: space-around;
+    width: 660px;
+  }
+
+  .circle-graphs-div {
+    height: 15.5rem;
+    margin: 0;
+    width: 15.5rem;
+  }
+
+  .circle-graph-num {
+    color: #4e515e;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .circle-graph-word {
+    font-size: 1.8rem;
+    font-weight: 800;
   }
 
   .bar-graph-pic {
     height: 200px;
-    width: 600px;
+    width: width: calc(100% - 660px);
   }
 
   .bar-graph-wrap {
     align-content: center;
     display: flex;
     flex-direction: column;
-    width: 40rem;
+    width: calc(100% - 660px);
   }
+
+  .bar-graph-footer {
+    margin: 0;
+  }
+
+
 }
 
