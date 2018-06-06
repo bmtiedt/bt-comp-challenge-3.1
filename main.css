@@ -387,7 +387,6 @@ a {
 /* JOB DESCRIPTION */
 .job-description-wrap {
   background-color: #ecf2f6;
-  /* grid-area: info; */
 }
 
 .legend {
@@ -589,7 +588,7 @@ margin: 0 3rem 0 0;
     display: grid;
     margin-top: 4rem;
     grid-template-areas: 
-        "nav header header header header"
+        "nav header header header header "
         "nav title title title title"
         "nav title title title title"
         "nav title title title title"
@@ -737,7 +736,8 @@ margin: 0 3rem 0 0;
   /* +++++GRAPH @ MEDIA+++++++ */
   .flex-wrap {
     display: flex;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
+    height:45rem;
   }
   
   .circle-graph-wrap {
@@ -793,6 +793,18 @@ margin: 0 3rem 0 0;
     margin: 2rem 0 0 14rem;
   }
 
+  /* +++++++SOCIAL SECTION++++++++ */
+.job-social-wrap {
+  display: flex
+}
+
+  .job-description-wrap {
+    width: 60%;
+  }
+
+  .section-social-media {
+    width: 39%;
+  }
 
 }
 
