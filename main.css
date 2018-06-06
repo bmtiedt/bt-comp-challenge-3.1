@@ -682,18 +682,46 @@ margin: 0 3rem 0 0;
   }
 
   /* +++++TITLE SECTION+++++++ */
-  .title-options {
-    display: flex;
-    flex-direction: row;
-  }
-
   .title-header-buttons {
-    float: right;
-    clear: both;
+    position: absolute;
+    /* top: 14rem; */
+    /* right: 18rem; */
+    top: 15%;
+    right: 10%;
+    /* float: right; */
+    /* clear: both; */
   }
 
   .title-info {
-    padding: 6rem 0 0 4rem;
+    /* padding: 6rem 0 0 4rem; */
+    height: 23rem;
+  }
+
+  .title-header-icon {
+    margin: 0 auto;
+  }
+
+  .title-button-top {
+    font-size: 1.5rem;
+    height: 5rem;
+    margin: 0 0.8rem;
+    width: 5rem;
+  }
+
+  .title-options {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 -1rem 0;
+  }
+
+  .open {
+    border-radius: 3rem;
+    width: 10rem;
+  }
+
+  .open-icon {
+    font-size: 1.3rem;
+    padding: 0.2rem 0.5rem;
   }
 
   /* +++++GRAPH @ MEDIA+++++++ */
