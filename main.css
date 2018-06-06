@@ -563,7 +563,7 @@ margin: 0 3rem 0 0;
 #social-copy-span {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  width: calc(100% - 10px);;
+  width: calc(100% - 10px);
 } 
 
 /* +++++++++MEDIA QUERIES++++++++++ */
@@ -813,6 +813,21 @@ margin: 0 3rem 0 0;
   /* +++++++SOCIAL SECTION++++++++ */
   .section-social-media {
     width: 40%;
+  }
+
+  .social-button  {
+    height: 6rem;
+    padding: rem 0 0 0;
+    width: calc(100% - 110px);
+  }
+
+  .social-link-wrap {
+    padding: 0 6rem;
+  }
+
+  .social-copy-wrap span {
+    margin: 0;
+    width: calc(100% - 6rem);
   }
 
 }
