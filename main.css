@@ -58,13 +58,6 @@ a {
   font-weight: 400;
 }
 
-.header-profile,
-.article-main,
-.article-admin,
-.article-categories {
-  border-bottom: 0.2rem solid rgb(20, 20, 20);
-}
-
 .header-profile {
   display: flex;
   height: 18rem;
@@ -159,7 +152,7 @@ a {
   font-weight: 400;
   line-height: 140%;
   padding: 1rem 0 0.5rem 0.5rem;
-  width: 380px;
+  /* width: 380px; */
 }
 
 .map-point {
@@ -542,10 +535,10 @@ margin: 0 3rem 0 0;
 #social-copy-span {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  width: calc(100% - 10px);
+  width: 28rem;
 } 
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:741px) {
   #nav { grid-area: nav; }
   #header { grid-area: header; }
   #title { grid-area: title; }
@@ -642,9 +635,6 @@ margin: 0 3rem 0 0;
   .bar-graph-pic {
     width: 100%;
   }
-}
-
-@media screen and (min-width:600px) {
 
   .title-options {
     display: flex;
@@ -690,6 +680,13 @@ margin: 0 3rem 0 0;
     display: flex;
     flex-direction: column;
     width: 24.5rem;
+  }
+
+  .header-profile,
+  .article-main,
+  .article-admin,
+  .article-categories {
+    border-bottom: 0.2rem solid rgb(20, 20, 20);
   }
 
   .header-profile,
@@ -784,27 +781,29 @@ margin: 0 3rem 0 0;
     color: #444652;
     font-size: 2rem;
     height: 100%;
-    width: 10rem;
+    margin: -2px;
+    width: 9.5rem;
+  }
+
+  .icon-search {
+    margin-left: 0.1rem;
   }
 
   .header-search-input {
-    width: calc(100% - 11rem * 4);
+    width: calc(100% - 10rem * 4);
   }
 
   /* +++++TITLE SECTION+++++++ */
   .title-header-buttons {
     position: absolute;
     top: 13%;
-    right: 10%;
+    right: 12%;
+
   }
 
   .title-info {
     height: 21rem;
     margin-top: 5rem;
-  }
-
-  .title-name {
-    font-size: 3rem;
   }
 
   .title-h1-p-wrap {
@@ -826,6 +825,16 @@ margin: 0 3rem 0 0;
     flex-direction: row;
     margin: 3rem 0 -1rem 0;
     padding-left: 4rem;
+  }
+
+  li {
+    /* align-content: center; */
+    display: flex;
+
+
+    /* justify-content: center; */
+    padding: 0;
+
   }
 
   .open {
@@ -901,6 +910,7 @@ margin: 0 3rem 0 0;
   }
 
   .job-description {
+    height: 100%;
     margin: 0.5rem 2%;
   }  
 
@@ -914,6 +924,40 @@ margin: 0 3rem 0 0;
 
   .legend {
     display: grid;
+  }
+
+  li {
+    height: 12rem;
+  }
+
+  li h2 {
+    margin-right: 0 3rem 0 0;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  .positon
+  li p {
+    padding: 0.5rem 0 0 2rem;
+    width: 500px;
+  }
+
+  #i1 {
+    margin: 0 3.5rem;
+  }
+
+  #i2 {
+    margin: 0 5.8rem;
+  }
+
+  #i4 {
+    margin: 0 4rem;
+  }
+
+  #i5 {
+    margin: 0 9rem;
+  }
+
+  #i6 {
+    margin: 0 3rem;
   }
 
   .job-edit-button {
@@ -945,7 +989,7 @@ margin: 0 3rem 0 0;
 
   .social-copy-wrap span {
     margin: 0;
-    width: calc(100% - 6rem);
+    width: calc(100% - 8rem);
   }
 
 }
