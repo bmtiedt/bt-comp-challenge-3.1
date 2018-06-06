@@ -684,9 +684,9 @@ margin: 0 3rem 0 0;
   /* +++++TITLE SECTION+++++++ */
   .title-header-buttons {
     position: absolute;
-    /* top: 14rem; */
+    /* top: 12rem; */
     /* right: 18rem; */
-    top: 15%;
+    top: 13%;
     right: 10%;
     /* float: right; */
     /* clear: both; */
@@ -694,9 +694,17 @@ margin: 0 3rem 0 0;
 
   .title-info {
     /* padding: 6rem 0 0 4rem; */
-    height: 23rem;
+    height: 14rem;
+    margin-top: 5rem;
   }
 
+  .title-name {
+    font-size: 3rem;
+  }
+
+  .title-h1-p-wrap {
+    margin: 0 0 0 2.5rem;
+  }
   .title-header-icon {
     margin: 0 auto;
   }
@@ -711,7 +719,8 @@ margin: 0 3rem 0 0;
   .title-options {
     display: flex;
     flex-direction: row;
-    margin: 2rem 0 -1rem 0;
+    margin: 3rem 0 -1rem 0;
+    padding-left: 4rem;
   }
 
   .open {
