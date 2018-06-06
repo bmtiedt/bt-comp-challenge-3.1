@@ -372,9 +372,10 @@ a {
 }
 
 .bar-graph-pic {
-  background-image: url('images/barGraph.jpg');
-  background-repeat: no-repeat;
+  background-image: url('images/barGraph4.jpg');
+  /* background-repeat: no-repeat; */
   background-position: center;
+  background-size: cover;
   height: 150px;
   margin: 0 auto;
   width: calc(100% - 10px);
@@ -744,6 +745,7 @@ margin: 0 3rem 0 0;
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
+    /* width: width: calc(100% - 660px); */
   }
 
   .circle-graph-footer {
@@ -776,18 +778,19 @@ margin: 0 3rem 0 0;
 
   .bar-graph-pic {
     height: 200px;
-    width: width: calc(100% - 660px);
+    width: calc(100% - 60px);
   }
 
   .bar-graph-wrap {
     align-content: center;
     display: flex;
     flex-direction: column;
+    height: 269px;
     width: calc(100% - 660px);
   }
 
   .bar-graph-footer {
-    margin: 0;
+    margin: 0 0 0 0;
   }
 
 
