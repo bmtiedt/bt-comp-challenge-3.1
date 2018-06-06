@@ -11,71 +11,78 @@
   <title>Comp3.1</title>
 </head>
 <body>
-  <div class="complete-body-wrap">
-    <nav class="nav-full-wrap">
+  <div class="complete-body-wrap" aria-hidden="true">
+    <nav class="nav-full-wrap" id="nav">
       <header class="header-profile">
-        <div>
-          <div class="img-div">
-          <img src="#" alt="">
-        </div>
+         <div class="img-profile-div" aria-hidden="true">
+          </div>
           <p class="profile-name">Newton Barley</p>
-        </div>
-          </header>
+      </header>
       <article class="article-main">
-            <p class="p-main">Main</p>
-            <i class="icon-nav fas fa-home"></i>
-            <p class="">Home</p>
-            <i class="icon-nav fas fa-briefcase"></i>
-            <p class="">Jobs</p>
-            <i class="icon-nav fab fa-elementor"></i>
-            <p class="">Resume</p>
-            <i class="icon-nav fas fa-clipboard-list"></i>
-            <p class="">Tasks</p>
-            <i class="icon-nav far fa-calendar-alt"></i>
-            <p class="">Calendar</p>
-      </article>
+            <p class="article-p-main">Main</p>
+            <a href="">
+            <p class="article-p"><i class="article-icon icon-nav fas fa-home"></i> <span>Home</span> </p>
+            </a>
+            <a href="">
+            <p class="article-p"><i class="article-icon icon-nav fas fa-briefcase"></i> <span>Jobs</span></p>
+            </a>  
+            <a href="">
+            <p class="article-p"><i class="article-icon icon-nav fab fa-elementor"></i> <span>Resume</span></p>
+            </a>
+            <a href="">
+            <p class="article-p"><i class="article-icon icon-nav fas fa-clipboard-list"></i> <span>Tasks</span></p>
+            </a>
+            <a href="">
+            <p class="article-p"><i class="article-icon icon-nav far fa-calendar-alt"></i> <span>Calendar</span></p>
+            </a>
+          </article>
       <article class="article-admin">
-            <p class="p-admin"></p>
-            <i class="icon-nav ifas fa-user"></i>
-            <p class="">Users</p>
-            <i class="icon-nav fas fa-map-pin"></i>
-            <p class="">Locations</p>
-            <i class="icon-nav fas fa-sitemap"></i>
-            <p class="">Workflows</p>
-            <i class="icon-nav fas fa-file-alt"></i>
-            <p class="">Job Boards</p>
-            <i class="icon-nav fas fa-share-alt"></i>
-            <p class="">Social</p>
-      </article>
+            <p class="article-p-main">Admin</p>
+            <a href="#">
+            <p class="article-p"><i class="article-icon icon-nav ifas fa-user"></i> <span>Users</span></p>
+            </a>
+            <a href="">
+            <p class="article-p"> <i class="article-icon icon-nav fas fa-map-pin"></i> <span>Locations</span></p>
+            </a>
+            <a href="">
+            <p class="article-p"> <i class="article-icon icon-nav fas fa-sitemap"></i> <span>Workflows</span></p>
+            </a>
+            <a href="">
+            <p class="article-p"> <i class="article-icon icon-nav fas fa-file-alt"></i> <span>Job Boards</span></p>
+            </a>
+            <a href="">
+            <p class="article-p"><i class="article-icon icon-nav fas fa-share-alt"></i> <span>Social</span></p>
+            </a>
+          </article>
       <article class="article-categories">
-            <p class="p-categories">Categories</p>
-            <i class="icon-nav check-checked fas fa-check-square"></i>
-            <p class="">Administrative</p>
-            <i class="icon-nav check-blue fas fa-square"></i>
-            <p class="">Design</p>
-            <i class="icon-nav check-red fas fa-square"></i>
-            <p class="">Executive</p>
-            <i class="icon-nav check-green fas fa-square"></i>
-            <p class="">Human Resources</p>
+            <p class="article-p-main">Categories</p>
+            
+            <p class="article-p"><i class="article-icon icon-nav check-checked fas fa-check-square"></i><span>Administrative</span></p>
+            
+            <p class="article-p"><i class="article-icon icon-nav check-blue fas fa-square"></i><span>Design</span></p>
+            
+            <p class="article-p"><i class="article-icon icon-nav check-red fas fa-square"></i><span>Executive</span></p>
+            
+            <p class="article-p"><i class="article-icon icon-nav check-green fas fa-square"></i><span>Human Resources</span></p>
       </article>
     </nav>
     <main class="main-full-wrap">
-      <header class="search-header">
+      <header class="search-header" id="header">
             <input type="text" class="search-icon header-search-input" placeholder="Search for a job, task or resume">
             <button class="search-icon icon-profile"><i class="fas fa-user"></i></button>
             <button class="search-icon icon-planner"><i class="far fa-calendar-alt"></i></button>
             <button class="search-icon icon-dots"><i class="fab fa-buromobelexperte"></i></button>
       </header>
-      <section class="title-info">
+      <section class="title-info" id="title">
             <h1 class="title-name">Customer Service Representative</h1>
             <p class="title-location"><i class="map-point fas fa-map-marker-alt"></i>San Francisco, CA • <span>Preview this post</span> </p>
-            <div class="title-header-buttons">
+            <div class="title-header-buttons" aria-hidden="true">
               <button class="title-button-top open"><i class="open-icon fas fa-circle"></i>OPEN</button>
               <button class="title-button-top"><i class="far fa-bookmark"></i></button>
               <button class="title-button-top"><i class="fas fa-pencil-alt"></i></button>
               <button class="title-button-top"><i class="far fa-trash-alt"></i></button>
             </div>
-            <div class="title-options">
+            <div class="title-options" aria-hidden="true">
               <p class="title-buttons"><a href="#">Summary</a></p>
               <p class="title-buttons"><a href="#">Applicants</a></p>
               <p class="title-buttons"><a href="">Job Board</a></p>
@@ -85,34 +92,34 @@
               <p class="title-buttons"><a href="">Notifications</a></p>
             </div>
       </section>
-      <section class="graph-section">
-        <div class="flex-wrap">
-          <div class="circle-graph-wrap">
-            <div class="circle-graph-wrap-words">
+      <section class="graph-section" id="graph">
+        <div class="flex-wrap" aria-hidden="true">
+          <div class="circle-graph-wrap" aria-hidden="true">
+            <div class="circle-graph-wrap-words" aria-hidden="true">
             <article class="circle-graph">
-              <div class="circle-graphs-div circle-graph-1">
+              <div class="circle-graphs-div circle-graph-1" aria-hidden="true">
                 <p class="circle-graph-num">679</p>
                 <p class="circle-graph-word">Applicants</p>
               </div>
-              <div class="circle-graphs-div circle-graph-2">
+              <div class="circle-graphs-div circle-graph-2" aria-hidden="true">
                 <p class="circle-graph-num">234</p>
                 <p class="circle-graph-word">Interviews</p>
               </div>
-              <div class="circle-graphs-div circle-graph-3">
+              <div class="circle-graphs-div circle-graph-3" aria-hidden="true">
                 <p class="circle-graph-num">3780</p>
                 <p class="circle-graph-word">Forwards</p>
               </div>
             </article>          
             <p class="circle-graph-words">TOTALS <i class="circle-graph-icon fas fa-circle"></i> Out of 5,334 views</p>
           </div>
-            <div class="bar-graph-wrap">
-              <div class="bar-graph-pic"></div>
+            <div class="bar-graph-wrap" aria-hidden="true">
+              <div class="bar-graph-pic" aria-hidden="true"></div>
               <p class="bar-graph-words">Applicants/day</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="job-description-wrap">           
+      <section class="job-description-wrap" id="info">           
         <legend class="legend">Job Description<button class="job-edit-button">Edit</button></legend>
           <ul class="job-description">
                 <li class="position">
@@ -140,9 +147,12 @@
                   <h2>Description</h2>
                   <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness resuce customer service wait times while doing a backhand spring and eating a ham sandwich.</p>
                 </li>
-                <li class="li-image-wrap">
+                <li >
                   <h2>Hiring Lead</h2>
-                  <p class="job-description-pic"><span>Tom Tizzy</span></p>
+                  <div class="li-image-wrap">
+                    <p class="job-description-pic"></p>
+                    <span>Tom Tizzy</span>
+                  </div>
                 </li>
                 <li>
                   <h2>Approved Salary</h2>
@@ -151,27 +161,27 @@
           </ul>
       </section>
     </main>
-    <aside class="section-social-media">
-      <div class="social-media-button-wrap">
+    <aside class="section-social-media" id="social">
+      <div class="social-media-button-wrap" aria-hidden="true">
         <button class="social-button fb"><i class="social-icon fab fa-facebook-f"></i>Post to Facebook</button>
         <button class="social-button twitter"><i class="social-icon fab fa-twitter"></i>Tweet this Job</button>
         <button class="social-button linked-in"><i class="social-icon fab fa-linkedin"></i>Post to Linkedin</button>
       </div>
         <h2><i class="icon-link fas fa-globe"></i>  Link to this Job</h2>
         <p>Don’t worry, we’ll give you a bit of creative license, however the objective is to build something that.</p>
-      <div class="social-copy-wrap">
+      <div class="social-copy-wrap" aria-hidden="true">
         <span><a href="">http://mywebwork.com</a></span>
         <button class="social-copy">Copy</button>
       </div>
       <h2><i class="icon-link fas fa-calculator"></i>  Use the Button Widget</h2>
       <p>Don’t worry, we’ll give you a bit of creative license, however the objective is to build something that respects the integrity of the original design.</p>
-      <div class="social-copy-wrap">
+      <div class="social-copy-wrap" aria-hidden="true">
         <span>link.dot//:https.www.where</span>
         <button class="social-copy">Copy</button>
       </div>
       <h2><i class="icon-link far fa-paper-plane"></i>  Upload Resumes by Email</h2>
       <p>However the objective is to build something that respects the integrity of the original design.</p>
-      <div class="social-copy-wrap">
+      <div class="social-copy-wrap" aria-hidden="true">
         <span id="social-copy-span">tomtizzy@gmail.com</span>
       </div>
     </aside>
