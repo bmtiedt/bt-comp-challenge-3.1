@@ -9,8 +9,6 @@
   box-sizing: inherit;
 }
 
-
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -100,12 +98,9 @@ a {
   color: green;
 }
 
-/* FULL WRAP */
 .main-full-wrap {
-  /* background-color: #edf2f6; */
   background-color: #fcfcfc;
 }
-
 
 /* HEADER SECTION */
 .search-header {
@@ -118,7 +113,6 @@ a {
 
 .search-icon {
   background-color: transparent;
-  /* border: 0.05rem solid #a0acbf; */
   color: #87898d;
   cursor: pointer;
   font-size: 1.8rem;
@@ -157,7 +151,6 @@ a {
 .title-info {
   background-color: #fcfcfc;
   font-weight: 700;
-  /* grid-area: title; */
 }
 
 .title-name {
@@ -180,7 +173,6 @@ a {
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 160%;
-    /* padding: 1rem 0; */
     margin: 0.5rem;
     width: calc(100% - 50px);
 }
@@ -226,12 +218,11 @@ a {
 
 .title-buttons {
   cursor: pointer;
+  font-size: 1.6rem;
   line-height: 160%;
   margin: 0 0 0.2rem 1rem;
   text-align: left;
-  font-size: 1.6rem;
   text-transform: uppercase;
-  
 }
 
 .title-buttons a {
@@ -247,24 +238,19 @@ a {
 
 .graph-section {
   background-color: #EDF2F6;
-  /* grid-area: graph; */
 }
 
-/* +++++++CIRCLE GRAPH+++++++++ */
+/* +++++++ GRAPH+++++++++ */
 
 
 .flex-wrap {
   border-top: 0.5rem soilid #eff3f6;
-  margin: -2px 0 -2px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: -2px 0 -2px 0;
   padding-top: 15px;
-  /*align-items: center;
-  justify-items: center; */
 }
-
-
 
 .circle-graph-wrap {
   align-items: center;
@@ -272,20 +258,19 @@ a {
   flex-direction: column;
   justify-content: center;
   width: 40rem;
-
 }
 
 .circle-graphs-div {
+  align-items: center;
   border: 10px solid #fff;
-  height: 130px;
-  width: 130px;
   border-radius: 50%;
   border-width: 10px;
-  margin: 3rem auto;
-  display: flex;
   flex-direction: column;
+  display: flex;
+  height: 130px;
   justify-content: center;
-  align-items: center;
+  margin: 3rem auto;
+  width: 130px;
 }
 
 .circle-graph-1 {
@@ -344,7 +329,6 @@ a {
   justify-content: center;
   line-height: 2.5rem;
   margin: 1rem 0 3rem 0;
-  /* margin: 0 auto; */
   width: 24rem;
 }
 
@@ -364,23 +348,18 @@ a {
   justify-content: center;
   line-height: 2.5rem;
   margin: 1rem 0 4rem 0;
-  /* padding-left: 2%; */
   text-transform: uppercase;
   width: 24rem;
 }
 
 .bar-graph-pic {
   background-image: url('images/barGraph4.jpg');
-  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
   height: 150px;
   margin: 0 auto;
   width: calc(100% - 10px);
 }
-
-
-/* +++++++++++++ */
 
 /* JOB DESCRIPTION */
 .job-description-wrap {
@@ -468,7 +447,6 @@ span {
 /* ++++++++++SOCIAL MEDIA+++++++++++++++ */
 .section-social-media {
   background-color: #edf2f6;
-  /* grid-area: social; */
 }
 
 .fb {
@@ -543,8 +521,6 @@ margin: 0 3rem 0 0;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 700;
-  /* height: 100%; */
-  /* line-height: 3rem; */
   padding: 0 2rem;
   overflow: hidden;
   width: calc(100% - 10rem);
@@ -568,13 +544,6 @@ margin: 0 3rem 0 0;
   border-bottom-right-radius: 5px;
   width: calc(100% - 10px);
 } 
-
-/* +++++++++MEDIA QUERIES++++++++++ */
-/* @media screen and (min-width: 420px) {
-  .nav-full-wrap {
-    display: grid;
-  }
-} */
 
 @media screen and (min-width:450px) {
   #nav { grid-area: nav; }
@@ -677,29 +646,20 @@ margin: 0 3rem 0 0;
 
 @media screen and (min-width:600px) {
 
-  .complete-body-wrap {
-    /* width: 600px; */
-  }
-
   .title-options {
     display: flex;
-    /* flex-wrap: wrap;  */
     flex-flow: row;
     height: 6rem;
   }
+
   .nav-out,
   .article-p span {
     display: initial;
   }
 
-  .header-profile {
-    /* border-bottom: 0.2rem solid ); */
-  }
-
   .article-p-main {
     color: #fff;
   }
-
 }
 
 @media screen and (min-width:1400px) {
@@ -834,16 +794,11 @@ margin: 0 3rem 0 0;
   /* +++++TITLE SECTION+++++++ */
   .title-header-buttons {
     position: absolute;
-    /* top: 12rem; */
-    /* right: 18rem; */
     top: 13%;
     right: 10%;
-    /* float: right; */
-    /* clear: both; */
   }
 
   .title-info {
-    /* padding: 6rem 0 0 4rem; */
     height: 21rem;
     margin-top: 5rem;
   }
@@ -886,7 +841,6 @@ margin: 0 3rem 0 0;
   /* +++++GRAPH @ MEDIA+++++++ */
   .flex-wrap {
     display: flex;
-    /* padding-top: 5rem; */
     height:45rem;
   }
   
@@ -895,7 +849,6 @@ margin: 0 3rem 0 0;
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    /* width: width: calc(100% - 660px); */
   }
 
   .circle-graph-footer {
