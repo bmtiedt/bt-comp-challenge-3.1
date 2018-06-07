@@ -127,8 +127,9 @@ a {
 .header-search-input {
   color: #a0acbf;
   font-weight: 400;
+  margin-left: 2px;
   padding: 0 0 0 1rem;
-  width: calc(100% - 50px*3 + 2px);
+  width: calc(100% - 40px*3);
 }
 
 .search-icon:focus {
@@ -145,6 +146,7 @@ a {
 .title-info {
   background-color: #fcfcfc;
   font-weight: 700;
+  height: 45rem;
 }
 
 .title-name {
@@ -595,12 +597,17 @@ margin: 0 3rem 0 0;
     border-bottom: 0.2rem solid transparent;
   }
 
-  .header-search-input {
-    width: calc(100% - 39px*3);
-  }
-
   .article-p-main {
     color: transparent;
+  }
+
+  p.article-p {
+    border-left: 0.5rem solid transparent;
+  }
+
+  p.article-p:hover {
+    background-color: #293241;
+    border-left: 0.5rem solid #15a4fa;
   }
 
   .article-main,
@@ -611,53 +618,94 @@ margin: 0 3rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 18rem;
+    height: 25rem;
   }
 
   .icon-nav:hover {
     color: #fff;
   }
 
-  .circle-graph-wrap-words,
-  .bar-graph-wrap {
-    width: calc(100% - 10rem);
+  .search-icon {
+    width: 6rem;
   }
 
-  .circle-graph-footer,
-  .bar-graph-footer {
-    margin: 2rem 0 2rem 3rem;
+  .header-search-input {
+    width: calc(100% - 60px*3);
+  }
+
+  .circle-graph-wrap-words,
+  .bar-graph-wrap {
+    width: calc(100% - 11rem);
+  }
+
+  .circle-graph-wrap {
+    flex-direction: row;
+    width: 1200px;
+  }
+
+  .circle-graph-footer {
+    margin: 2rem 0 2rem 30%;
+  }
+
+  .circle-graph {
+    display: flex;
+    height:200px;
+    justify-content: space-evenly;
+  }
+
+  .circle-graphs-div {
+    height: 15.5rem;
+    width: 15.5rem;
   }
 
   .circle-graph-num {
     color: #4e515e;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
   }
 
   .circle-graph-word {
-    font-size: 1.5rem
+    font-size: 1.4rem;
+    font-weight: 800;
   }
 
   .bar-graph-pic {
-    width: 100%;
+    height: 200px;
+    width: calc(100% - 60px);
+  }
+
+  .bar-graph-footer {
+    margin: 2rem 0 0 14rem;
   }
 
   .title-options {
     display: flex;
     flex-flow: wrap;
+    flex-direction: row;
     height: 6rem;
-  }
-
-  .nav-out,
-  .article-p span {
-    /* display: initial; */
   }
 
   .article-p-main {
     color: #fff;
   }
 }
+@media screen and (min-width: 1150px) {
+  .bar-graph-pic {
+    margin: 0;
+    width: calc(100% - 120px);
+  }
 
+  .title-name {
+    width: 50rem;
+  }
+
+  .title-header-buttons {
+    position: absolute;
+    top: 7%;
+    right: 12%;
+
+  }
+}
 @media screen and (min-width:1400px) {
 
 /* FULL GRID AREA DEFINED */
@@ -716,6 +764,11 @@ margin: 0 3rem 0 0;
     height: 11rem;
     margin-top: 3rem;
     width: 11rem;
+  }
+
+  .nav-out,
+  .article-p span {
+    display: initial;
   }
 
   .article-main,
@@ -797,8 +850,8 @@ margin: 0 3rem 0 0;
   /* +++++TITLE SECTION+++++++ */
   .title-header-buttons {
     position: absolute;
-    top: 13%;
-    right: 12%;
+    top: 6%;
+    right: 6%;
 
   }
 
