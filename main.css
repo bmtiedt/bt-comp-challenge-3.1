@@ -110,6 +110,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   height: 50px;
+  margin: 0 -2px;
   width: 40px;
 }
 
@@ -594,6 +595,10 @@ margin: 0 3rem 0 0;
     border-bottom: 0.2rem solid transparent;
   }
 
+  .header-search-input {
+    width: calc(100% - 39px*3);
+  }
+
   .article-p-main {
     color: transparent;
   }
@@ -639,7 +644,7 @@ margin: 0 3rem 0 0;
 
   .title-options {
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
     height: 6rem;
   }
 
