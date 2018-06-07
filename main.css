@@ -110,6 +110,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   height: 50px;
+  margin: 0 -2px;
   width: 40px;
 }
 
@@ -126,8 +127,9 @@ a {
 .header-search-input {
   color: #a0acbf;
   font-weight: 400;
+  margin-left: 2px;
   padding: 0 0 0 1rem;
-  width: calc(100% - 50px*3 + 2px);
+  width: calc(100% - 40px*3);
 }
 
 .search-icon:focus {
@@ -144,6 +146,7 @@ a {
 .title-info {
   background-color: #fcfcfc;
   font-weight: 700;
+  height: 45rem;
 }
 
 .title-name {
@@ -206,6 +209,7 @@ a {
 .title-options {
   display: flex;
   flex-direction: column;
+  height: 0;
   margin: 1rem 0;
 }
 
@@ -597,6 +601,15 @@ margin: 0 3rem 0 0;
     color: transparent;
   }
 
+  p.article-p {
+    border-left: 0.5rem solid transparent;
+  }
+
+  p.article-p:hover {
+    background-color: #293241;
+    border-left: 0.5rem solid #15a4fa;
+  }
+
   .article-main,
   .article-admin,
   .article-categories {
@@ -605,41 +618,198 @@ margin: 0 3rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 18rem;
+    height: 25rem;
+  }
+
+  .flex-wrap {
+    display: flex;
+    flex-direction: column;
   }
 
   .icon-nav:hover {
     color: #fff;
   }
 
-  .circle-graph-wrap-words,
-  .bar-graph-wrap {
-    width: calc(100% - 10rem);
+  .search-icon {
+    width: 6rem;
   }
 
-  .circle-graph-footer,
-  .bar-graph-footer {
-    margin: 2rem 0 2rem 3rem;
+  .header-search-input {
+    width: calc(100% - 60px*3);
+  }
+
+  .title-options  {
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .job-social-wrap {
+    display: flex
+  }
+
+
+  .job-description {
+    height: 100%;
+    margin: 0.5rem 2%;
+  }  
+
+  .job-description-wrap {
+    width: 60%;
+  }
+
+  .job-description-pic {
+    margin: 0.5rem 2%;
+  }
+
+  .legend {
+    display: grid;
+  }
+
+  li {
+    display: flex;
+    height: 12rem;
+    padding: 0;
+  }
+
+  li h2 {
+    margin-right: 0 3rem 0 0;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  .positon
+  li p {
+    padding: 0.5rem 0 0 2rem;
+    width: 500px;
+  }
+
+  #i1 {
+    margin: 0 3.5rem;
+  }
+
+  #i2 {
+    margin: 0 5.8rem;
+  }
+
+  #i4 {
+    margin: 0 4rem;
+  }
+
+  #i5 {
+    margin: 0 9rem;
+  }
+
+  #i6 {
+    margin: 0 3rem;
+  }
+
+  .circle-graph-wrap-words,
+  .bar-graph-wrap {
+    margin-bottom: 2rem;
+    width: calc(100% - 11rem);
+  }
+
+  .circle-graph-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60rem;
+  }
+
+  .circle-graph-footer {
+    margin: 2rem 0 2rem 30%;
+  }
+
+  .circle-graph {
+    display: flex;
+    height:200px;
+    justify-content: space-evenly;
+  }
+
+  .circle-graphs-div {
+    height: 15.5rem;
+    width: 15.5rem;
   }
 
   .circle-graph-num {
     color: #4e515e;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
   }
 
   .circle-graph-word {
-    font-size: 1.5rem
+    font-size: 1.4rem;
+    font-weight: 800;
   }
 
   .bar-graph-pic {
-    width: 100%;
+    height: 200px;
+    width: calc(100% - 60px);
+  }
+
+  .bar-graph-footer {
+    margin: 2rem 0 0 14rem;
+  }
+
+  .title-info {
+    height: 100%;
   }
 
   .title-options {
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
+    flex-direction: row;
     height: 6rem;
+  }
+
+  .article-p-main {
+    color: #fff;
+  }
+
+  .social-button {
+    width: calc(100% - 160px);
+  }
+
+  #social-copy-span {
+    width: 20rem;
+  }
+}
+
+/* ++++++++++++++++++++ MEDIA 1150 +++++++++++++++++ */
+@media screen and (min-width: 1150px) {
+  .nav-full-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 24.5rem;
+  }
+
+  .header-profile,
+  .article-main,
+  .article-admin,
+  .article-categories {
+    border-bottom: 0.2rem solid rgb(20, 20, 20);
+  }
+
+  .header-profile,
+  .article-main,
+  .article-admin,
+  .article-categories {
+    align-items: normal;
+    display: grid;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .header-profile {
+    display: grid;
+    height: 25rem;
+    margin: 0;
+  }
+
+  .img-profile-div {
+    height: 11rem;
+    margin-top: 3rem;
+    width: 11rem;
   }
 
   .nav-out,
@@ -647,11 +817,70 @@ margin: 0 3rem 0 0;
     display: initial;
   }
 
-  .article-p-main {
+  .article-main,
+  .article-admin,
+  .article-categories {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 27rem;
+    justify-content: flex-start;
+  }
+
+  .article-p {
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+    padding: 0 0 0 1.8rem;
+  }
+
+  .article-admin > a:hover {
+    background-color: #354052;
     color: #fff;
   }
-}
+  
+  .article-p-main {
+    color: #65748d;
+    font-weight: 700;
+    margin: 1rem 0 0 1rem;
+  }
 
+  .article-p span {
+    color: #a0acbf;
+    font-weight: 800;
+    margin: 0 0 0 3rem;
+  }
+
+  p.article-p {
+    border-left: 0.5rem solid transparent;
+  }
+
+  p.article-p:hover {
+    background-color: #293241;
+    border-left: 0.5rem solid #15a4fa;
+  }
+
+  p.article-p span:hover {
+    color: #fff;
+  }
+
+  
+
+  .bar-graph-pic {
+    margin: 0;
+    /* width: calc(100% - 120px); */
+  }
+
+  .title-name {
+    width: 50rem;
+  }
+
+  .title-header-buttons {
+    position: absolute;
+    top: 7%;
+    right: 12%;
+
+  }
+}
 @media screen and (min-width:1400px) {
 
 /* FULL GRID AREA DEFINED */
@@ -700,12 +929,6 @@ margin: 0 3rem 0 0;
     width: 100%;
   }
 
-  .article-main,
-  .article-admin,
-  .article-categories {
-    height: 27rem;
-  }
-
   .header-profile {
     display: grid;
     height: 25rem;
@@ -718,12 +941,18 @@ margin: 0 3rem 0 0;
     width: 11rem;
   }
 
+  .nav-out,
+  .article-p span {
+    display: initial;
+  }
+
   .article-main,
   .article-admin,
   .article-categories {
     align-content: flex-start;
     display: flex;
     flex-direction: column;
+    height: 27rem;
     justify-content: flex-start;
   }
 
@@ -796,14 +1025,14 @@ margin: 0 3rem 0 0;
   /* +++++TITLE SECTION+++++++ */
   .title-header-buttons {
     position: absolute;
-    top: 13%;
-    right: 12%;
+    top: 6%;
+    right: 6%;
 
   }
 
   .title-info {
-    height: 21rem;
-    margin-top: 5rem;
+    /* height: 21rem; */
+    /* margin-top: 5rem; */
   }
 
   .title-h1-p-wrap {
@@ -823,6 +1052,7 @@ margin: 0 3rem 0 0;
   .title-options {
     display: flex;
     flex-direction: row;
+    height: 4rem;
     margin: 3rem 0 -1rem 0;
     padding-left: 4rem;
   }
@@ -851,12 +1081,14 @@ margin: 0 3rem 0 0;
   .flex-wrap {
     display: flex;
     height:45rem;
+    padding: 0;
   }
   
   .circle-graph-wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0;
     width: 1200px;
   }
 
@@ -890,6 +1122,7 @@ margin: 0 3rem 0 0;
 
   .bar-graph-pic {
     height: 200px;
+    margin: 0;
     width: calc(100% - 60px);
   }
 
