@@ -621,6 +621,11 @@ margin: 0 3rem 0 0;
     height: 25rem;
   }
 
+  .flex-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
   .icon-nav:hover {
     color: #fff;
   }
@@ -633,14 +638,80 @@ margin: 0 3rem 0 0;
     width: calc(100% - 60px*3);
   }
 
+  .title-options  {
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .job-social-wrap {
+    display: flex
+  }
+
+
+  .job-description {
+    height: 100%;
+    margin: 0.5rem 2%;
+  }  
+
+  .job-description-wrap {
+    width: 60%;
+  }
+
+  .job-description-pic {
+    margin: 0.5rem 2%;
+  }
+
+  .legend {
+    display: grid;
+  }
+
+  li {
+    display: flex;
+    height: 12rem;
+    padding: 0;
+  }
+
+  li h2 {
+    margin-right: 0 3rem 0 0;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+  .positon
+  li p {
+    padding: 0.5rem 0 0 2rem;
+    width: 500px;
+  }
+
+  #i1 {
+    margin: 0 3.5rem;
+  }
+
+  #i2 {
+    margin: 0 5.8rem;
+  }
+
+  #i4 {
+    margin: 0 4rem;
+  }
+
+  #i5 {
+    margin: 0 9rem;
+  }
+
+  #i6 {
+    margin: 0 3rem;
+  }
+
   .circle-graph-wrap-words,
   .bar-graph-wrap {
+    margin-bottom: 2rem;
     width: calc(100% - 11rem);
   }
 
   .circle-graph-wrap {
-    flex-direction: row;
-    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60rem;
   }
 
   .circle-graph-footer {
@@ -678,6 +749,10 @@ margin: 0 3rem 0 0;
     margin: 2rem 0 0 14rem;
   }
 
+  .title-info {
+    height: 100%;
+  }
+
   .title-options {
     display: flex;
     flex-flow: wrap;
@@ -688,11 +763,111 @@ margin: 0 3rem 0 0;
   .article-p-main {
     color: #fff;
   }
+
+  .social-button {
+    width: calc(100% - 160px);
+  }
+
+  #social-copy-span {
+    width: 20rem;
+  }
 }
+
+/* ++++++++++++++++++++ MEDIA 1150 +++++++++++++++++ */
 @media screen and (min-width: 1150px) {
+  .nav-full-wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 24.5rem;
+  }
+
+  .header-profile,
+  .article-main,
+  .article-admin,
+  .article-categories {
+    border-bottom: 0.2rem solid rgb(20, 20, 20);
+  }
+
+  .header-profile,
+  .article-main,
+  .article-admin,
+  .article-categories {
+    align-items: normal;
+    display: grid;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .header-profile {
+    display: grid;
+    height: 25rem;
+    margin: 0;
+  }
+
+  .img-profile-div {
+    height: 11rem;
+    margin-top: 3rem;
+    width: 11rem;
+  }
+
+  .nav-out,
+  .article-p span {
+    display: initial;
+  }
+
+  .article-main,
+  .article-admin,
+  .article-categories {
+    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 27rem;
+    justify-content: flex-start;
+  }
+
+  .article-p {
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+    padding: 0 0 0 1.8rem;
+  }
+
+  .article-admin > a:hover {
+    background-color: #354052;
+    color: #fff;
+  }
+  
+  .article-p-main {
+    color: #65748d;
+    font-weight: 700;
+    margin: 1rem 0 0 1rem;
+  }
+
+  .article-p span {
+    color: #a0acbf;
+    font-weight: 800;
+    margin: 0 0 0 3rem;
+  }
+
+  p.article-p {
+    border-left: 0.5rem solid transparent;
+  }
+
+  p.article-p:hover {
+    background-color: #293241;
+    border-left: 0.5rem solid #15a4fa;
+  }
+
+  p.article-p span:hover {
+    color: #fff;
+  }
+
+  
+
   .bar-graph-pic {
     margin: 0;
-    width: calc(100% - 120px);
+    /* width: calc(100% - 120px); */
   }
 
   .title-name {
